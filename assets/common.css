@@ -17,17 +17,45 @@
 	--size-10: 160px;
 
 	/* Colors */
-	--color-dark: #232323;
+	--color-dark: #0e0b0b;
 	--color-light: #f8f8f8;
-	--color-red: red;
+	--color-yellow: #d9d960;
+	--color-blue: #1772c2;
 
+}
+
+body{
+	background-color: var(--color-dark);
+}
+
+header{
+	background-color: var(--color-yellow);
+	padding: var(--size-4);
+	padding-block: var(--size-2)
 }
 
 h1{
+	color:var(--color-dark);
 	font-size: var(--size-9);
 }
 
+h2{
+	color:var(--color-yellow);
+	font-size: var(--size-5);
+	padding-inline: var(--size-4);
+}
+
+section{
+	block-size: 75vh;
+}
+
 p{
-	color:brown;
+	color:var(--color-light);
 	font-size: var(--size-1);
+	padding-inline: var(--size-4);
+}
+
+footer{
+	padding-block: var(--size-2);
+	background-color: var(--color-blue);
 }
