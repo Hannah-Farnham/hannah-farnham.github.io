@@ -1,3 +1,4 @@
+
 /* Variables */
 
 :root {
@@ -15,6 +16,11 @@
 	--size-9: 144px;
 	--size-10: 160px;
 
+	/* Colors */
+	--color-dark: #232323;
+	--color-light: #f8f8f8;
+	--color-red: red;
+
 }
 
 h1{
@@ -23,4 +29,5 @@ h1{
 
 p{
 	color:brown;
+	font-size: var(--size-1);
 }
