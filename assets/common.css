@@ -1,0 +1,26 @@
+/* Variables */
+
+:root {
+
+	/* Sizes */
+
+	--size-1: 16px;
+	--size-2: 24px;
+	--size-3: 32px;
+	--size-4: 48px;
+	--size-5: 64px;
+	--size-6: 80px;
+	--size-7: 96px;
+	--size-8: 112px;
+	--size-9: 144px;
+	--size-10: 160px;
+
+}
+
+h1{
+	font-size: var(--size-9);
+}
+
+p{
+	color:brown;
+}
