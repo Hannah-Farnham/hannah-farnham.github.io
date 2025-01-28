@@ -20,11 +20,14 @@
 
 	--color-dark: #0e0b0b;
 	--color-light: #f8f8f8;
-	--color-yellow: #d9d960;
-	--color-blue: #1772c2;
+	--color-yellow: #FEC700;
+	--color-orange: #FF9900;
+	--color-blue: #0387FF;
+	--color-pink: #D603BE;
 
-	/* Colors */
-	--font-1: "Anton", serif;
+	/* Fonts */
+	--font-1: "Oswald", serif;
+
 
 }
 
@@ -51,6 +54,7 @@ h2{
 	font-size: var(--size-5);
 	line-height: var(--size-6);
 	padding-inline: var(--size-4);
+	margin-bottom: var(--size-2);
 }
 
 section{
@@ -58,14 +62,33 @@ section{
 }
 
 p{
-	color:var(--color-light);
+	color: var(--color-light);
 	font-size: var(--size-1);
 	padding-inline: var(--size-4);
+	line-height: 4ch;
 }
 
 footer{
 	padding-block: var(--size-2);
+	background-color: var(--color-orange);
+}
+
+li{
 	background-color: var(--color-blue);
+	margin-bottom: var(--size-1);
+	padding: var(--size-1);
+	margin-right: var(--size-1);
+	align-items: center;
+	text-align: center;
+	border-radius: var(--size-1);
+}
+
+#Manuscript{
+	background-color: var(--color-pink);
+}
+
+#Binding{
+	background-color: var(--color-orange);
 }
 
 @media (min-width: 600px) {
@@ -86,4 +109,9 @@ footer{
 	--size-10: 176px;
 
 	}
+
+	.inline-links{
+		display: flex;
+		justify-content: center;	}
 }
+
