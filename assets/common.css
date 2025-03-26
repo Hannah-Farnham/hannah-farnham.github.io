@@ -183,7 +183,6 @@ footer{
 		justify-content: center;	
 		gap: var(--size-1);
 		align-items: start;
-		height: 3000px;
 	}
 }
 
