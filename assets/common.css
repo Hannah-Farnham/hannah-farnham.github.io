@@ -43,6 +43,10 @@ nav{
 			background-color: var(--color-light);
 			border-left: var(--color-light-grey) 2px solid;
 		}
+
+		a:hover{
+			background-color: var(--color-light-grey);
+		}
 	}
 
 .Nav-Logo{
@@ -79,7 +83,6 @@ em{
 }
 
 	/* Portfolio Blocks */
-
 
 .inline-links{
 	background-color: var(--color-light);
@@ -162,10 +165,11 @@ footer{
 		}
 
 	.inline-links{
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(3, auto);
 		justify-content: center;	
 		gap: var(--size-1);
-		height: 60vh;
+		align-items: start;
 	}
 }
 
