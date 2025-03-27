@@ -5,6 +5,7 @@
 
 	/* Sizes */
 
+	--size-0: 8px;
 	--size-1: 16px;
 	--size-2: 24px;
 	--size-3: 32px;
@@ -21,10 +22,7 @@
 	--color-dark: #0e0b0b;
 	--color-light: #f8f8f8;
 	--color-light-grey: #E9E9E9;
-	--color-yellow: #FEC700;
-	--color-orange: #FF9900;
-	--color-blue: #0387FF;
-	--color-pink: #D603BE;
+	--color-blue: #0C76CC;
 
 	/* Fonts */
 	--font-1: "aktiv-grotesk", sans-serif;
@@ -40,14 +38,30 @@ body{
 nav{
 	background-color: var(--color-light-grey);
 	overflow: hidden;
-	}
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center; 
+	gap: 2px;
+	height: 48px;
+}
 
 .nav-item{
 	background-color: var(--color-light);
-	border-left: var(--color-light-grey) 2px solid;
+	padding: var(--size-1);
+	a{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: var(--size-0);
+		font-weight: 100;
+	}
 }
 
 .nav-item:hover{
+	background-color: var(--color-light-grey);
+}
+
+#page-highlight{
 	background-color: var(--color-light-grey);
 }
 
@@ -61,7 +75,7 @@ header{
 
 h1{
 	color: var(--color-dark);
-	font-size: var(--size-3);
+	font-size: var(--size-2);
 }
 
 h3{
@@ -120,12 +134,13 @@ footer{
 	margin-top: 2px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 
 	:root{
 
 	/* Sizes */
 
+	--size-0: 16px;
 	--size-1: 20px;
 	--size-2: 32px;
 	--size-3: 48px;
@@ -142,39 +157,43 @@ footer{
 	body{
 		display: grid;
 		grid-template-columns: 80px 1fr;
-		grid-template-rows: 100vh;
+	}
+
+	.body-content{
+		margin-left: 2px;
 	}
 
 	nav{
-		margin-right: 2px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center; 
 		gap: 2px;
 		position: relative;
-		height: 100vh;
-			a{
-				text-align: center;
-				font-size: var(--size-1);
-			}
+		height: 100%;
 	}
 	
 	.nav-item{
 		width: 100%;
-		padding: var(--size-1);
+		padding: var(--size-2);
 		display: block;
 		-webkit-writing-mode: vertical-rl;
 		-ms-writing-mode: tb-rl;
 		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		text-align: center;
+		display: flex;
+		justify-content: center; 
+		align-items: center;
 	}
 
 	.nav-logo{
 		margin-top: var(--size-1);
 		width: 48px;
 		position: sticky;
-		top: 0;
-		z-index: 1001;
+		top: 700px;
+		position: fixed;
+		z-index: 1800;
 	}
 	
 	.inline-links{
