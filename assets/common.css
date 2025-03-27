@@ -65,6 +65,7 @@ h1{
 h2{
 	color: var(--color-dark-orange);
 	font-size: var(--size-1);
+	line-height: 2ch;
 }
 
 h3{
@@ -91,7 +92,7 @@ nav{
 	justify-content: flex-start;
 	align-items: center; 
 	gap: 2px;
-	height: 52px;
+	height: 62px;
 	overflow-x: auto;
 	scrollbar-width: none; 
 }
