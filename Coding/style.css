@@ -1,0 +1,14 @@
+	
+	/* Header */
+
+	header{
+		padding: var(--size-2);
+		background-color: var(--color-light-blue);
+		margin-bottom: 2px;
+	}
+
+	/* Nav */
+
+	#page-highlight{
+		background-color: var(--color-light-blue);
+	}
