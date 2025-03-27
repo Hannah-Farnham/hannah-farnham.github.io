@@ -33,15 +33,26 @@ header{
 		/* Images */
 
 #headshot-images{
-	display: flex;
+	display: grid;
 	gap: var(--size-0);
-	flex-direction: row;
+	flex-direction: column;
+	grid-template-columns: repeat(2, auto);
+	padding: var(--size-1);
+	background-color: var(--color-light);
+	img{
+		width: 100%;  
+		height: 100%;
+		object-fit: cover; 
+		object-position: center;
+		display: block;
+	}
 }
 
 .headshot{
 	max-width: 200px;
 	border-radius: var(--size-2);
 	overflow: hidden;
+	aspect-ratio: 1/1;
 }
 
 #headshot-blue {
@@ -54,13 +65,19 @@ header{
 
 #headshot-orange {
 	border: var(--color-x-dark-orange) 2px solid;
-
 }
+
+#headshot-pink {
+	border: var(--color-x-dark-pink) 2px solid;
+}
+
 
 @media (min-width: 768px) {
 
 	#headshot-images{
 		gap: var(--size-2);
+		padding: var(--size-4);
+		grid-template-columns: repeat(4, auto);
 	}
 
 	.headshot{
