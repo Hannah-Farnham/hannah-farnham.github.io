@@ -22,21 +22,30 @@
 	--color-dark: #04232A;
 	--color-light: #ffff;
 	--color-light-grey: #E9E9E9;
+
 	--color-light-blue: #0C76CC;
 	--color-dark-blue: #00579D;
 	--color-x-dark-blue: #0A3252;
+
 	--color-light-pink: #EAC2D6;
 	--color-dark-pink: #DE9EBE;
 	--color-x-dark-pink: #943A67;
+
 	--color-light-green: #C0C89D;
+	--color-dark-green: #9EAA69;
+	--color-x-dark-green: #606D29;
+
 	--color-light-orange: #E06056;
 	--color-dark-orange: #BB463D;
 	--color-x-dark-orange: #852119;
+
 	--color-light-sand: #F5F0E8;
 	--color-dark-sand: #EEE7DE;
 
 	/* Fonts */
 	--font-1: "aktiv-grotesk", sans-serif;
+	--font-2: "Instrument Serif", serif;
+
 }
 
 body{
@@ -47,12 +56,15 @@ body{
 	/* Fonts */
 
 h1{
-	font-size: var(--size-9);
+	font-family: var(--font-2);
+	font-size: var(--size-5);
+	line-height: 2ch;
+	margin-bottom: var(--size-1);
 }
 
 h2{
 	color: var(--color-dark-orange);
-	font-size: var(--size-2);
+	font-size: var(--size-1);
 }
 
 h3{
@@ -121,13 +133,44 @@ header{
 	background-color: var(--color-light-orange);
 	margin-bottom: 2px;
 	h2{
-		max-width: 70vw;
 		color: var(--color-x-dark-orange);
 	}
 	h1{
 		color: var(--color-x-dark-orange);
 	}
 }
+
+#logo-animation{
+	padding: 80px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-light);
+	margin-bottom: 2px;
+	position: relative;
+	
+	img{
+		position: absolute;
+		height: 150px;
+		animation: slide 20s ease-in-out infinite;
+	}
+}
+
+@keyframes slide {
+	0% {
+		left: 0; 
+		transform: rotate(0deg);
+		}
+	50% {
+		left: 100%;
+		transform: rotate(180deg); 
+		}
+	100% {
+		left: 0;
+		transform: rotate(360deg);
+		}
+	}
 
 	/* Portfolio Blocks */
 
@@ -290,6 +333,20 @@ footer{
 }
 
 @media (min-width: 1100px) {
+
+	h1{
+		font-family: var(--font-2);
+		font-size: var(--size-9);
+		line-height: 2ch;
+		margin-bottom: 0;
+	}
+	
+	h2{
+		color: var(--color-dark-orange);
+		font-size: var(--size-2);
+		max-width: 70vw;
+	}
+
 	.inline-links{
 		grid-template-columns: repeat(3, auto);
 		padding-top: var(--size-4);
