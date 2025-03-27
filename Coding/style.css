@@ -1,14 +1,36 @@
 	
 	/* Header */
 
-	header{
-		padding: var(--size-2);
-		background-color: var(--color-light-blue);
-		margin-bottom: 2px;
+header{
+	padding: var(--size-2);
+	background-color: var(--color-light-blue);
+	margin-bottom: 2px;
+	h2{
+		color: var(--color-x-dark-blue);
 	}
+}
 
 	/* Nav */
 
-	#page-highlight{
-		background-color: var(--color-light-blue);
+#page-highlight{
+	background-color: var(--color-light-blue);
+	a{
+		color: var(--color-x-dark-blue);
 	}
+}
+
+/* Portfolio Blocks */
+
+.portfolio-blocks:hover{
+	.portfolio-label{
+		background-color: var(--color-light-blue);
+		border: var(--color-dark-blue) 2px solid;
+		p{
+			color: var(--color-x-dark-blue);
+		}
+		.portfolio-divider{
+			background-color: var(--color-dark-blue);
+		}
+	}
+
+}

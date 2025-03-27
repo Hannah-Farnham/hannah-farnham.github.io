@@ -5,10 +5,16 @@
 		padding: var(--size-2);
 		background-color: var(--color-light-green);
 		margin-bottom: 2px;
+		h2{
+			color: var(--color-x-dark-green);
+		}
 	}
-
-	/* Nav */
-
+	
+		/* Nav */
+	
 	#page-highlight{
 		background-color: var(--color-light-green);
+		a{
+			color: var(--color-x-dark-green);
+		}
 	}

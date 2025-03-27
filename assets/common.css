@@ -24,8 +24,10 @@
 	--color-light-grey: #E9E9E9;
 	--color-light-blue: #0C76CC;
 	--color-dark-blue: #00579D;
+	--color-x-dark-blue: #0A3252;
 	--color-light-pink: #EAC2D6;
 	--color-dark-pink: #DE9EBE;
+	--color-x-dark-pink: #943A67;
 	--color-light-green: #C0C89D;
 	--color-light-orange: #E06056;
 	--color-dark-orange: #BB463D;
@@ -45,8 +47,7 @@ body{
 	/* Fonts */
 
 h1{
-	font-size: var(--size-10);
-	font-family: ;
+	font-size: var(--size-9);
 }
 
 h2{
@@ -61,7 +62,7 @@ h3{
 p{
 	color: var(--color-dark);
 	font-size: var(--size-1);
-	line-height: 4ch;
+	line-height: 2ch;
 }
 
 em{
@@ -119,8 +120,11 @@ header{
 	padding: var(--size-2);
 	background-color: var(--color-light-orange);
 	margin-bottom: 2px;
-	h1, h2{
+	h2{
 		max-width: 70vw;
+		color: var(--color-x-dark-orange);
+	}
+	h1{
 		color: var(--color-x-dark-orange);
 	}
 }
@@ -147,15 +151,6 @@ header{
 	position: relative;
 }
 
-.portfolio-blocks:hover{
-	.portfolio-label{
-		background-color: var(--color-light-blue);
-		p{
-			padding-inline: var(--size-1);
-		}
-	}
-}
-
 .portfolio-cover-image{
 	margin-bottom: var(--size-1);
 	overflow: hidden;
@@ -170,7 +165,7 @@ header{
 }
 
 .portfolio-label{
-	padding: 4px;
+	padding: 6px;
 	background-color: var(--color-light);
 	border: var(--color-light-grey) solid 2px;
 	position: absolute;
@@ -181,18 +176,36 @@ header{
 	border-radius: var(--size-0);
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 	transition: 0.4s ease-in-out;
+	justify-content: center;
+	align-items: center;
 	p{
 		font-size: calc(var(--size-1)*.8);
 		flex-grow: 1;
-		padding-inline: var(--size-0);
+		padding-inline: 6px;
 		transition: 0.4s ease-in-out;
+	}
+}
+
+.portfolio-blocks:hover{
+	.portfolio-label{
+		background-color: var(--color-light-orange);
+		border: var(--color-dark-orange) 2px solid;
+		p{
+			padding-inline: 8px;
+			color: var(--color-x-dark-orange);
+		}
+		.portfolio-divider{
+			background-color: var(--color-dark-orange);
+		}
 	}
 }
 
 .portfolio-divider{
 	border: 0;
 	width: 2px;
+	height: var(--size-1);
 	background-color: var(--color-light-grey); 
+	transition: 0.4s ease-in-out;
 }
 
 	/* Footer */
@@ -279,6 +292,8 @@ footer{
 @media (min-width: 1100px) {
 	.inline-links{
 		grid-template-columns: repeat(3, auto);
+		padding-top: var(--size-4);
+		padding-bottom: var(--size-4);
 	}
 
 }
