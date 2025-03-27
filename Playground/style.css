@@ -6,7 +6,7 @@ header{
 	padding: var(--size-2);
 	background-color: var(--color-light-pink);
 	margin-bottom: 2px;
-	h1, h2{
+	h1, h2, p{
 		color: var(--color-x-dark-pink);
 	}
 }
@@ -32,6 +32,23 @@ header{
 		.portfolio-divider{
 			background-color: var(--color-dark-pink);
 		}
+	}
+
+}
+
+@media (min-width: 1100px) {
+
+	.inline-links{
+		grid-template-columns: repeat(3, auto);
+		padding-top: var(--size-2);
+		padding-bottom: var(--size-2);
+	}
+
+	.portfolio-blocks{
+		min-width: 343px;	
+		max-width: 500px;
+		width: 500px;
+		height: 600px;
 	}
 
 }
