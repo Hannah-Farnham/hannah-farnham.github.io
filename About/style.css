@@ -85,3 +85,12 @@ header{
 		border-radius: var(--size-7);
 	}
 }
+
+
+@media (min-width: 1200px) {
+
+	#about-intro{
+		padding-left: 600px;
+		max-width: none;
+	}
+}
