@@ -5,10 +5,16 @@ header{
 	padding: var(--size-2);
 	background-color: var(--color-light);
 	margin-bottom: 2px;
+	display: flex;
+	svg{
+		padding-left: var(--size-1);
+	}
 	h1, h2{
 		color: var(--color-dark);
 	}
 }
+
+	/* Fonts */
 
 h1{
 	font-family: var(--font-1);
@@ -20,19 +26,34 @@ p{
 	max-width: 45vw;
 }
 
+	/* Mini Nav */
+
 .mini-nav{
 	display: flex;
 	flex-direction: row;
 	padding: var(--size-1);
 	background-color: var(--color-light);
+	position: sticky;
+	top: 1px;
+	border-bottom: var(--color-light-grey) solid 2px;
 	a{
 		padding-right: var(--size-1);
+		color: var(--color-dark-grey);
 	}
 }
 
+.mini-nav a:hover{
+	color: var(--color-dark);	
+}
+
+.mini-nav a:active{
+	color: var(--color-dark);	
+}
+
+	/* Page Layout */
+
 .case-study-section{
 	background-color: var(--color-light);
-	margin-top: 2px;
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 }
@@ -48,4 +69,9 @@ p{
 
 .case-study-info{
 	padding: var(--size-1);
+	background-color: var(--color-light);
+}
+
+#intro-section{
+	margin-top: 2px;
 }
