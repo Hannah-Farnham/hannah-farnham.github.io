@@ -1,0 +1,51 @@
+	
+	/* Header */
+
+header{
+	padding: var(--size-2);
+	background-color: var(--color-light);
+	margin-bottom: 2px;
+	h1, h2{
+		color: var(--color-dark);
+	}
+}
+
+h1{
+	font-family: var(--font-1);
+	font-size: var(--size-5);
+	margin-bottom: 0;
+}
+
+p{
+	max-width: 45vw;
+}
+
+.mini-nav{
+	display: flex;
+	flex-direction: row;
+	padding: var(--size-1);
+	background-color: var(--color-light);
+	a{
+		padding-right: var(--size-1);
+	}
+}
+
+.case-study-section{
+	background-color: var(--color-light);
+	margin-top: 2px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+
+.case-study-image{
+	object-fit: cover; 
+	object-position: center;
+	height: 600px;
+	display: block;
+	padding: var(--size-1);
+	border-right: var(--color-light-grey) solid 2px;
+}
+
+.case-study-info{
+	padding: var(--size-1);
+}

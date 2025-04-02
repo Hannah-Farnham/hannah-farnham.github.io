@@ -20,6 +20,7 @@
 	/* Colors */
 
 	--color-dark: #04232A;
+	--color-dark-grey: #818181;
 	--color-light: #ffff;
 	--color-light-grey: #E9E9E9;
 
@@ -70,6 +71,12 @@ h2{
 
 h3{
 	font-size: var(--size-1);
+}
+
+h4{
+	font-size: var(--size-1);
+	text-transform: uppercase;
+	color: var(--color-dark-grey);
 }
 
 p{
@@ -281,6 +288,15 @@ footer{
 	--size-10: 176px;
 
 	}
+
+	h4{
+		font-size: var(--size-0);
+	}
+	
+	p{
+		font-size: var(--size-0);
+	}
+	
 
 	body{
 		display: grid;
