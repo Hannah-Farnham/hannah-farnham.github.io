@@ -33,7 +33,7 @@ h2{
 }
 
 h4{
-	margin-bottom: var(--size-1)
+	margin-bottom: 12px;
 }
 
 p{
@@ -77,9 +77,6 @@ p{
 
 .case-study-section{
 	background-color: var(--color-light);
-	p{
-		padding-top: var(--size-0);
-	}
 }
 
 .case-study-image{
@@ -123,10 +120,7 @@ p{
 .bullet-point{
 	display: flex;
 	margin-bottom: var(--size-0);
-	gap: var(--size-0);
-	p{
-		padding-top: 0px;
-	}
+	gap: 16px;
 }
 
 .word-point {
