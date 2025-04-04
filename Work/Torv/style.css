@@ -123,27 +123,16 @@ p{
 .bullet-point{
 	display: flex;
 	margin-bottom: var(--size-0);
+	gap: var(--size-0);
 	p{
 		padding-top: 0px;
 	}
 }
 
-.number-point{
-	padding: 8px;
-	border: var(--color-light-grey) 2px solid;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: var(--size-3);
-	width: var(--size-3);
-	border-radius: 8px;
-}
-
 .word-point {
-	padding: 12px;
-	p{
-		margin-top: 2px;
-	}
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 @media (min-width: 768px) {
