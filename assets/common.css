@@ -48,6 +48,15 @@
 	--font-2: "Instrument Serif", serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: var(--color-light-orange); 
+	color: var(--color-x-dark-orange); 
+}
+
 body{
 	background-color: var(--color-light-grey);
 	font-family: var(--font-1);
@@ -82,7 +91,7 @@ h4{
 p{
 	color: var(--color-dark);
 	font-size: var(--size-1);
-	line-height: 2ch;
+	line-height: 2.2ch;
 }
 
 em{
