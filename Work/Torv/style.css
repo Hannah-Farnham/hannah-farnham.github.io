@@ -85,6 +85,11 @@ p{
 	p{
 		width: 100%;
 	}
+	em{
+		font-weight: bold;
+		font-style: normal;
+		color: #2652E9;
+	}
 }
 
 #intro-video{
@@ -180,11 +185,6 @@ p{
 		justify-content: center;
 		h2{
 			width: 100%;
-		}
-		em{
-			font-weight: bold;
-			font-style: normal;
-			color: #2652E9;
 		}
 	}
 
