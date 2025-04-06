@@ -142,6 +142,9 @@ p{
 .case-study-info{
 	padding: var(--size-3);
 	background-color: var(--color-light);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #problem-section{
