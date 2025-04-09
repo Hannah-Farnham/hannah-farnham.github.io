@@ -45,7 +45,7 @@
 
 	/* Fonts */
 	--font-1: "aktiv-grotesk", sans-serif;
-	--font-2: "Instrument Serif", serif;
+	--font-2: "akzidenz-grotesk-next-pro", sans-serif;
 }
 
 html {
@@ -68,7 +68,7 @@ body{
 h1{
 	font-family: var(--font-2);
 	font-size: var(--size-5);
-	line-height: 2ch;
+	line-height: 0ch;
 	margin-bottom: var(--size-1);
 }
 
