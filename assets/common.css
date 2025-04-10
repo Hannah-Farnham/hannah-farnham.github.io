@@ -44,7 +44,7 @@
 	--color-dark-sand: #EEE7DE;
 
 	/* Fonts */
-	--font-1: "aktiv-grotesk", sans-serif;
+	--font-1: "akzidenz-grotesk-next-pro", sans-serif;
 	--font-2: "akzidenz-grotesk-next-pro", sans-serif;
 }
 
@@ -72,8 +72,14 @@ h1{
 	margin-bottom: var(--size-1);
 }
 
+h1{
+	font-family: var(--font-1);
+	font-size: var(--size-3);
+	margin-bottom: 0;
+	color: var(--color-dark);
+}
+
 h2{
-	color: var(--color-dark-orange);
 	font-size: var(--size-2);
 	line-height: 2ch;
 }
@@ -361,18 +367,9 @@ footer{
 }
 
 @media (min-width: 1100px) {
-	
+
 	h1{
-		font-family: var(--font-2);
-		font-size: var(--size-8);
-		line-height: 2ch;
-	}
-	
-	h2{
-		color: var(--color-dark-orange);
 		font-size: var(--size-2);
-		line-height: 2ch;
-		max-width: 70vw;
 	}
 
 	.inline-links{
