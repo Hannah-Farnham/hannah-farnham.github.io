@@ -320,6 +320,10 @@ footer{
 	}
 	
 
+	header{
+		padding: var(--size-3);
+	}
+
 	body{
 		display: grid;
 		grid-template-columns: 80px 1fr;
@@ -381,7 +385,7 @@ footer{
 @media (min-width: 1100px) {
 
 	h1{
-		font-size: var(--size-2);
+		font-size: var(--size-3);
 	}
 
 	.inline-links{
@@ -393,9 +397,7 @@ footer{
 }
 
 @media (min-width: 1440px) {
-	.inline-links{
-		grid-template-columns: repeat(4, auto);
-	}
+
 
 }
 
