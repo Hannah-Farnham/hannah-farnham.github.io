@@ -281,7 +281,14 @@ footer{
 	padding: var(--size-2);
 	background-color: var(--color-light);
 	margin-top: 2px;
-}
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-2);
+		a{
+			color: var(--color-dark-orange);
+			text-decoration: underline;
+		}
+	}
 
 
 @media (min-width: 768px) {
@@ -363,6 +370,11 @@ footer{
 	
 	.inline-links{
 		grid-template-columns: repeat(2, auto);
+	}
+
+	footer{
+		flex-direction: row;
+		gap: var(--size-2);
 	}
 }
 
