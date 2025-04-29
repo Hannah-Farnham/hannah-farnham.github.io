@@ -136,10 +136,12 @@ p{
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-3);
+	flex-wrap: wrap;
 }
 
 .one-user{
 	display: flex;
+	flex: 1 1 300px;
 	flex-direction: column;
 	gap: var(--size-1);
 	img{
@@ -154,12 +156,22 @@ p{
 .user-text{
 	display: flex;
 	flex-direction: column;
+	h3{
+		color: #2652E9;
+	}
 }
 
 .user-description{
 	p{
 		color: var(--color-dark-grey);
 	}
+}
+
+.quote{
+	p{
+		font-size: var(--size-1);
+	}
+	padding-bottom: var(--size-0);
 }
 
 
