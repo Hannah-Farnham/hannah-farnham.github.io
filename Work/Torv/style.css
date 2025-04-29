@@ -25,10 +25,6 @@ h2{
 	color: var(--color-dark)
 }
 
-h4{
-	margin-bottom: 12px;
-}
-
 p{
 	max-width: 65ch;
 }
@@ -68,36 +64,18 @@ p{
 
 	/* Intro Section */
 
-#intro-section{
-	margin-top: 2px;
-	padding: 0px;
-}
-
-#intro-text{
-	padding: var(--size-3);
-	p{
-		width: 100%;
-	}
-	em{
-		font-weight: 500;
-		font-style: normal;
-		color: #2652E9;
-	}
-}
-
 #intro-video{
 	overflow: hidden;
-	padding: var(--size-3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+  	height: 100%;
 	video{
-		max-width: 550px;
-		max-height: 550px;
 		object-fit: cover;
-		object-position: center;
-		border-radius: 8%;
 		overflow: hidden;
+		width: 100%;
+  		height: 100%;
 	}
 }
 
@@ -105,6 +83,7 @@ p{
 
 .case-study-section{
 	background-color: var(--color-light);
+	padding: var(--size-3);
 }
 
 .case-study-image{
@@ -133,28 +112,53 @@ p{
 }
 
 .case-study-info{
-	padding: var(--size-3);
 	background-color: var(--color-light);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
-#problem-section{
-	margin-top: 2px;
+
+#problem-section, #research-section{
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-2);
 }
 
 .bullet-point{
 	display: flex;
-	margin-bottom: var(--size-0);
+	margin-top: var(--size-0);
 	gap: 16px;
 }
 
-.word-point {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+.line-container {
+	padding: 0 var(--size-3); /* 32px left and right */
+	background-color: white;
 }
+
+.horizontal-line {
+	width: 100%;
+	height: 2px;
+	background-color: var(--color-light-grey);
+  }
+
+.one-user{
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-1);
+	img{
+		width: 320px;
+		height: 320px;
+		object-fit: cover;
+		overflow: hidden;
+	}
+}
+
+.user-text{
+	h4{
+		margin-top: 0px;
+	}
+}
+
 
 @media (min-width: 768px) {
 
@@ -165,22 +169,23 @@ p{
 		}
 	}
 
+	p{
+		font-size: var(--size-0);
+	}
+	
+
 	/* Intro Section */
 
 	#intro-section{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
 		justify-content: center;
+		padding: var(--size-3);
 	}
 
 	#intro-text{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		h2{
-			width: 100%;
-		}
 	}
 
 	/* Page Layout */
@@ -188,11 +193,10 @@ p{
 	.case-study-section{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		height: 100vh;
 	}
 
 	.case-study-info{
-		height: 100vh;
+		padding: var(--size-3);
 	}
 
 	.case-study-image{
@@ -203,13 +207,20 @@ p{
 		padding: 0px;
 	}
 
-	.case-study-image :nth-child(1){
-		height: 660px;
+	#problem-section{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--size-5);
 	}
 
-	#case-study-image-right{
-		border-right: none;
-		border-left: var(--color-light-grey) solid 2px;
+	#research-section{
+		grid-template-columns: repeat(1, 1fr);	
+		gap: var(--size-1);
+	}
+
+	.users{
+		display: flex;
+		gap: var(--size-1);
 	}
 
 	.mini-nav{

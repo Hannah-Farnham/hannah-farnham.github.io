@@ -4,7 +4,7 @@
 header{
 	background-color: var(--color-light-blue);
 	margin-bottom: 2px;
-	h1, h2{
+	h1, h2, p{
 		color: var(--color-x-dark-blue);
 	}
 }

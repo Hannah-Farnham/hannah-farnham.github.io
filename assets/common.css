@@ -20,7 +20,7 @@
 	/* Colors */
 
 	--color-dark: #04232A;
-	--color-dark-grey: #818181;
+	--color-dark-grey: #9f9f9f;
 	--color-light: #ffff;
 	--color-light-grey: #E9E9E9;
 
@@ -44,8 +44,8 @@
 	--color-dark-sand: #EEE7DE;
 
 	/* Fonts */
-	--font-1: "akzidenz-grotesk-next-pro", sans-serif;
-	--font-2: "akzidenz-grotesk-next-pro", sans-serif;
+	--font-1: "aktiv-grotesk", sans-serif;
+	--font-2: "aktiv-grotesk", sans-serif;
 }
 
 html {
@@ -86,12 +86,14 @@ h2{
 
 h3{
 	font-size: var(--size-1);
+	font-weight: 500;
+	line-height: 2.2ch
 }
 
 h4{
 	font-size: var(--size-1);
-	text-transform: uppercase;
 	color: var(--color-dark-grey);
+	line-height: 2.2ch
 }
 
 p{
@@ -114,7 +116,7 @@ nav{
 	justify-content: flex-start;
 	align-items: center; 
 	gap: 2px;
-	height: 52px;
+	height: 62px;
 	overflow-x: auto;
 	scrollbar-width: none; 
 }
@@ -127,7 +129,6 @@ nav{
 	transition: 0.4s ease-in-out;
 	a{
 		text-align: center;
-		text-transform: uppercase;
 		font-size: 12px;
 		font-weight: 100;
 		width: 100%;
@@ -159,6 +160,9 @@ header{
 		color: var(--color-x-dark-orange);
 	}
 	h1{
+		color: var(--color-x-dark-orange);
+	}
+	p{
 		color: var(--color-x-dark-orange);
 	}
 }
@@ -287,6 +291,10 @@ footer{
 		a{
 			color: var(--color-dark-orange);
 			text-decoration: underline;
+			line-height: 2.2ch;
+		}
+		p{
+			font-size: var(--size-0);
 		}
 	}
 
@@ -316,12 +324,11 @@ footer{
 	}
 	
 	p{
-		font-size: var(--size-0);
+		font-size: var(--size-1);
 	}
-	
 
 	header{
-		padding: var(--size-3);
+		padding: var(--size-2);
 	}
 
 	body{
