@@ -396,6 +396,13 @@ footer{
 		gap: var(--size-2);
 	}
 
+	#wide-block{
+		grid-column: span 2;
+		.portfolio-cover-image{
+			width: 100%;
+		}
+	}
+
 }
 
 @media (min-width: 1440px) {
