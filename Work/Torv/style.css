@@ -131,6 +131,10 @@ p{
 .line-container {
 	padding: 0 var(--size-3);
 	background-color: white;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .horizontal-line {
