@@ -31,6 +31,8 @@ header{
 	flex-direction: column;
 	grid-template-columns: repeat(2, auto);
 	background-color: var(--color-light);
+	padding: var(--size-1);
+	gap: var(--size-1);
 	img{
 		width: 100%;  
 		height: 100%;
@@ -42,7 +44,8 @@ header{
 
 .headshot{
 	overflow: hidden;
-	aspect-ratio: 1/1;
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 
@@ -50,8 +53,12 @@ header{
 
 	#headshot-images{
 		grid-template-columns: repeat(4, auto);
+		grid-template-rows: 600px auto;
 	}
-
+	
+	#headshot-green{
+	grid-column: span 2;
+	}
 
 }
 

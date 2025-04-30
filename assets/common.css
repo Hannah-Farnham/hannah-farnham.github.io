@@ -66,15 +66,10 @@ body{
 	/* Fonts */
 
 h1{
-	font-family: var(--font-2);
-	font-size: var(--size-5);
-	line-height: 2ch;
-	margin-bottom: var(--size-1);
-}
-
-h1{
 	font-family: var(--font-1);
-	font-size: var(--size-3);
+	font-size: 7vw;
+	font-weight: 500;
+	line-height: 2ch;
 	margin-bottom: 0;
 	color: var(--color-dark);
 }
@@ -154,7 +149,6 @@ nav{
 header{
 	padding: var(--size-2);
 	background-color: var(--color-light-orange);
-	margin-bottom: 2px;
 	h2{
 		color: var(--color-x-dark-orange);
 	}
@@ -172,7 +166,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--color-light);
+	background-color: var(--color-light-pink);
 	margin-bottom: 2px;
 	position: relative;
 	overflow-x: hidden;
@@ -392,11 +386,11 @@ footer{
 @media (min-width: 1100px) {
 
 	h1{
-		font-size: var(--size-3);
+		font-size: 4vw;
 	}
 
 	.inline-links{
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(3, auto);
 		padding-top: var(--size-3);
 		padding-bottom: var(--size-3);
 		gap: var(--size-2);
@@ -405,7 +399,9 @@ footer{
 }
 
 @media (min-width: 1440px) {
-
+	.inline-links{
+		grid-template-columns: repeat(4, auto);
+	}
 
 }
 
