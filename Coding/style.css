@@ -2,19 +2,19 @@
 	/* Header */
 
 header{
-	background-color: var(--color-light-blue);
+	background-color: var(--color-light-orange);
 	margin-bottom: 2px;
 	h1, h2, p{
-		color: var(--color-x-dark-blue);
+		color: var(--color-x-dark-orange);
 	}
 }
 
 	/* Nav */
 
 #page-highlight{
-	background-color: var(--color-light-blue);
+	background-color: var(--color-light-orange);
 	a{
-		color: var(--color-x-dark-blue);
+		color: var(--color-x-dark-orange);
 	}
 }
 
@@ -22,13 +22,13 @@ header{
 
 .portfolio-blocks:hover{
 	.portfolio-label{
-		background-color: var(--color-light-blue);
-		border: var(--color-dark-blue) 2px solid;
+		background-color: var(--color-light-orange);
+		border: var(--color-dark-orange) 2px solid;
 		p{
-			color: var(--color-x-dark-blue);
+			color: var(--color-x-dark-orange);
 		}
 		.portfolio-divider{
-			background-color: var(--color-dark-blue);
+			background-color: var(--color-dark-orange);
 		}
 	}
 
