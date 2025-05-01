@@ -11,7 +11,7 @@
 		<link href="/assets/common.css" rel="stylesheet">
 		<link href="/Work/style.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
-		<script defer src="basic.js"></script>
+		<script src="basic.js" defer></script>
 
 		<!-- Favicon Link -->
 		<link href="../../assets/favicon.ico" rel="icon" sizes="any">
@@ -62,30 +62,16 @@
 			</header>
 			<div class="mini-nav">
 				<ul>
-					<a href="#intro-section">
-						Overview
-					</a>
-					<a href="#problem-section">
-						Problem-Discovery
-					</a>
-					<a href="#research-section">
-						Research
-					</a>
-					<a href="#ideation-section">
-						Ideation
-					</a>
-					<a href="#low-fidelity-section">
-						Low-Fidelity
-					</a>
-					<a href="#testing-section">
-						Testing
-					</a>
-					<a href="#high-fidelity-section">
-						High-Fidelity
-					</a>
+				  <li><a href="#intro-section" class="nav-link">Overview</a></li>
+				  <li><a href="#problem-section" class="nav-link">Problem-Discovery</a></li>
+				  <li><a href="#research-section" class="nav-link">Research</a></li>
+				  <li><a href="#ideation-section" class="nav-link">Ideation</a></li>
+				  <li><a href="#low-fidelity-section" class="nav-link">Low-Fidelity</a></li>
+				  <li><a href="#testing-section" class="nav-link">Testing</a></li>
+				  <li><a href="#high-fidelity-section" class="nav-link">High-Fidelity</a></li>
 				</ul>
 			</div>
-			<div class="case-study-section" id="intro-section">
+			<section class="case-study-section" id="intro-section">
 				<div id="intro-video">
 					<video autoplay muted loop width="300" height="300" controls>
 						<source src="Images/Torv Phone Animation.mp4" type="video/mp4">
@@ -143,132 +129,137 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
+
 			<div class="line-container">
 				<div class="horizontal-line"></div>
 			</div>
-				<div class="case-study-section" id="problem-section">
-					<div>
-						<h4>
-							Problem
-						</h4>
-						<h2>
-							People struggle to meet others within their community or to get involved locally.
-						</h2>
+
+			<section class="case-study-section" id="problem-section">
+				<div>
+					<h4>
+						Problem
+					</h4>
+					<h2>
+						People struggle to meet others within their community or to get involved locally.
+					</h2>
+				</div>
+				<div>
+					<h4>
+						Research Questions
+					</h4>
+					<div class="bullet-point">
+							<p>
+								How do people <em>interact</em> with their community?
+							</p>
 					</div>
-					<div>
-						<h4>
-							Research Questions
-						</h4>
-						<div class="bullet-point">
-								<p>
-									How do people interact with their community?
-								</p>
-						</div>
-						<div class="bullet-point">
-								<p>
-									How do people define community? 
-								</p>
-						</div>
-						<div class="bullet-point">
-								<p>
-									How are people making lasting relationships?
-								</p>
-						</div>
+					<div class="bullet-point">
+							<p>
+								How do people define community? 
+							</p>
 					</div>
-					<div>
-						<h4>
-							Goals
-						</h4>
-						<div class="bullet-point">
-								<p>
-									Find a people in your area with similar interests and hobbies
-								</p>
-						</div>
-						<div class="bullet-point">
-								<p>
-									Suggest events for people to attend in their neighborhood
-								</p>
-						</div>
-						<div class="bullet-point">
-								<p>
-									Make it easy for people to find things happening in their community							
-								</p>
-						</div>
+					<div class="bullet-point">
+							<p>
+								How are people making lasting relationships?
+							</p>
 					</div>
 				</div>
-				<div class="line-container">
-					<div class="horizontal-line"></div>
-				</div>
-				<div class="case-study-section" id="research-section">
-					<div>
-						<h2>
-							User Interviews
-						</h2>
+				<div>
+					<h4>
+						Goals
+					</h4>
+					<div class="bullet-point">
+							<p>
+								Find a people in your area with similar interests and hobbies
+							</p>
 					</div>
-					<div class="users">
-						<div class="one-user">
-							<div class="user-text">
-								<h4>Insight</h4>
-								<h3>People need familiarity when meeting new people to feel safe.</h3>
+					<div class="bullet-point">
+							<p>
+								Suggest events for people to attend in their neighborhood
+							</p>
+					</div>
+					<div class="bullet-point">
+							<p>
+								Make it easy for people to find things happening in their community							
+							</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="line-container">
+				<div class="horizontal-line"></div>
+			</div>
+
+			<section class="case-study-section" id="research-section">
+				<div>
+					<h2>
+						User Interviews
+					</h2>
+				</div>
+				<div class="users">
+					<div class="one-user">
+						<div class="user-text">
+							<h4>Insight</h4>
+							<h3>People need familiarity when meeting new people to feel safe.</h3>
+						</div>
+						<div>
+							<img src="Images/Vee.png" alt="User">
+						</div>
+						<div class="user-text">
+							<div class="quote">
+								<p>
+									“I would find a mutual friend or friend to try new things with me.”
+								</p>
 							</div>
-							<div>
-								<img src="Images/Vee.png" alt="User">
-							</div>
-							<div class="user-text">
-								<div class="quote">
-									<p>
-										“I would find a mutual friend or friend to try new things with me.”
-									</p>
-								</div>
-								<p><em>Vee Mai</em></p>
-								<div class="user-description">
-									<p>New to the city</p>
-									<p>Introvert</p>
-									<p>Creative</p>
-								</div>
-							</div>
-							<div class="vertical-line"></div>
-							<div class="user-text">
-								<h4>How Might We</h4>
-								<h3>Make users feel safe and familiar while meeting new people online?</h3>
+							<p><em>Vee Mai</em></p>
+							<div class="user-description">
+								<p>New to the city</p>
+								<p>Introvert</p>
+								<p>Creative</p>
 							</div>
 						</div>
-						<div class="one-user">
-							<div class="user-text">
-								<h4>Insight</h4>
-								<h3>People want to build relationships naturally.</h3>
+						<div class="vertical-line"></div>
+						<div class="user-text">
+							<h4>How Might We</h4>
+							<h3>Make users feel safe and familiar while meeting new people online?</h3>
+						</div>
+						</div>
+					<div class="one-user">
+						<div class="user-text">
+							<h4>Insight</h4>
+							<h3>People want to build relationships naturally.</h3>
+						</div>
+						<div>
+							<img src="Images/emma.jpeg" alt="User">
+						</div>
+						<div class="user-text">
+							<div class="quote">
+								<p>
+									“When you first meet someone and it fits, you know.”
+								</p>
 							</div>
-							<div>
-								<img src="Images/emma.jpeg" alt="User">
-							</div>
-							<div class="user-text">
-								<div class="quote">
-									<p>
-										“When you first meet someone and it fits, you know.”
-									</p>
-								</div>
-								<p><em>Emma de Suyrot</em></p>
-								<div class="user-description">
-									<p>New to the city</p>
-									<p>Extrovert</p>
-									<p>Athletic</p>
-								</div>
-							</div>
-							<div class="vertical-line"></div>
-							<div class="user-text">
-								<h4>How Might We</h4>
-								<h3>Create a natural feeling when people are meeting online?</h3>
+							<p><em>Emma de Suyrot</em></p>
+							<div class="user-description">
+								<p>New to the city</p>
+								<p>Extrovert</p>
+								<p>Athletic</p>
 							</div>
 						</div>
-						<div class="one-user">
-							<div class="user-text">
-								<h4>Insight</h4>
-								<h3>Friendships are built on values, not just hobbies or interests.</h3>
+						<div class="vertical-line"></div>
+						<div class="user-text">
+							<h4>How Might We</h4>
+							<h3>Create a natural feeling when people are meeting online?</h3>
+						</div>
+					</div>
+					<div class="one-user">
+						<div class="user-text">
+							<h4>Insight</h4>
+							<h3>Friendships are built on values, not just hobbies or interests.</h3>
 							</div>
 							<div>
 								<img src="Images/Rice.jpeg" alt="User">
 							</div>
+							<!-- Fix indentation -->
 							<div class="user-text">
 								<div class="quote">
 									<p>
@@ -316,13 +307,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
 				<div class="line-container">
 					<div class="horizontal-line"></div>
 				</div>
 
-				<div class="case-study-section" id="ideation-section">
+				<section class="case-study-section" id="ideation-section">
 					<div>
 						<h2>
 							Ideation
@@ -363,13 +354,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
 				<div class="line-container">
 					<div class="horizontal-line"></div>
 				</div>
 
-				<div class="case-study-section" id="low-fidelity-section">
+				<section class="case-study-section" id="low-fidelity-section">
 					<div>
 						<h2>
 							Low-Fidelity
@@ -378,13 +369,13 @@
 					<div class="wide-image">
 						<img src="Images/Wireframe.png" alt="">
 					</div>
-				</div>
+				</section>
 
 				<div class="line-container">
 					<div class="horizontal-line"></div>
 				</div>
 
-				<div class="case-study-section" id="high-fidelity-section">
+				<section class="case-study-section" id="high-fidelity-section">
 					<div>
 						<h2>
 							High-Fidelity
@@ -394,9 +385,13 @@
 						<img src="Images/torv-branding.png" alt="">
 					</div>
 					<div class="figma-embed">
-						<iframe style="border: 2px solid rgba(0, 0, 0, 0.1);" width="1000" height="450" src="https://embed.figma.com/proto/aR4OYKPlwoM9MLZ8oitgmx/Hannah-Farnham-%7C-Torv?page-id=2871%3A30889&node-id=2818-9422&p=f&viewport=-436%2C148%2C0.07&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2818%3A9422&embed-host=share" allowfullscreen></iframe>
-					</div>
-				</div>
+						<iframe 
+						src="https://embed.figma.com/proto/aR4OYKPlwoM9MLZ8oitgmx/Hannah-Farnham-%7C-Torv?page-id=2871%3A30889&node-id=2818-9422&p=f&viewport=-436%2C148%2C0.07&scaling=scale-down&starting-point-node-id=2818%3A9422&embed-host=share" 
+						allowfullscreen>
+						</iframe>
+					  </div>
+				</section>
+
 		</section>
 	</body>
 </html>
