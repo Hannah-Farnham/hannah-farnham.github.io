@@ -94,6 +94,7 @@ p{
 .case-study-section{
 	background-color: var(--color-light);
 	padding: var(--size-3);
+	padding-top: var(--size-10);
 }
 
 .case-study-image{
@@ -120,7 +121,6 @@ p{
 	}
 }
 
-
 #problem-section, #research-section{
 	display: flex;
 	flex-direction: column;
@@ -134,9 +134,8 @@ p{
 }
 
 .line-container {
-	padding: 0 var(--size-3);
+	padding-bottom: var(--size-10);
 	background-color: white;
-	height: 180px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -305,13 +304,13 @@ p{
 		padding-bottom: 0px;
 	}
 
-	#problem-section{
+	#problem-grid{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--size-5);
 	}
 
-	#research-section, #ideation-section, #low-fidelity-section, #high-fidelity-section{
+	#research-section, #ideation-section, #low-fidelity-section, #high-fidelity-section, #testing-section{
 		grid-template-columns: repeat(1, 1fr);	
 		gap: var(--size-1);
 	}
