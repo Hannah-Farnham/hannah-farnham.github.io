@@ -37,7 +37,37 @@ header{
 @media (min-width: 1100px) {
 
 	.inline-links{
-		grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat(6, 1fr);
+		padding: var(--size-3);
 	}
 
+	#wide-block{
+		grid-column: span 3;
+		max-width: none;
+		min-width: 0;
+		width: 100%;
+		.portfolio-cover-image{
+			width: 100%;
+			grid-column: span 3;
+		}
+		.portfolio-blocks{
+			max-width: none;
+			min-width: none;
+		}
+	}
+
+	#medium-block{
+		grid-column: span 2;
+		max-width: none;
+		min-width: 0;
+		width: 100%;
+		.portfolio-cover-image{
+			width: 100%;
+			grid-column: span 2;
+		}
+		.portfolio-blocks{
+			max-width: none;
+			min-width: none;
+		}
+	}
 }

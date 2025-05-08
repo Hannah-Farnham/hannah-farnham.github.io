@@ -210,8 +210,8 @@ header{
 	height: 500px;
 	background-color: var(--color-light);
 	border: var(--color-light-grey) solid 2px;
-	max-width: 360px;
-	min-width: 343px;
+	/* max-width: 360px;
+	min-width: 343px; */
 	position: relative;
 	overflow: hidden;
 }
@@ -278,21 +278,24 @@ header{
 
 footer{
 	padding: var(--size-2);
-	background-color: var(--color-light);
+	background-color: var(--color-light-blue);
 	margin-top: 2px;
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-2);
+	gap: var(--size-1);
 		a{
-			color: var(--color-dark-orange);
+			color: var(--color-x-dark-blue);
 			text-decoration: underline;
 			line-height: 2.2ch;
+			font-size: calc(var(--size-1) * .8);
+		}
+		a:hover{
+			color: var(--color-x-dark-orange);
 		}
 		p{
-			font-size: var(--size-0);
+			font-size: calc(var(--size-1) * .8);
 		}
 	}
-
 
 @media (min-width: 768px) {
 
@@ -375,7 +378,7 @@ footer{
 	}
 	
 	.inline-links{
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	footer{
@@ -391,14 +394,29 @@ footer{
 	}
 
 	.inline-links{
-		grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat(3, 1fr);
 		padding-top: var(--size-3);
 		padding-bottom: var(--size-3);
 		gap: var(--size-2);
 		grid-auto-flow: dense;
 	}
 
-	#wide-block{
+	#wide-block-1{
+		grid-column: span 2;
+		max-width: none;
+		min-width: 0;
+		width: 100%;
+		.portfolio-cover-image{
+			width: 100%;
+			grid-column: span 2;
+		}
+		.portfolio-blocks{
+			max-width: none;
+			min-width: none;
+		}
+	}
+
+	#wide-block-2{
 		grid-column: span 2;
 		max-width: none;
 		min-width: 0;
@@ -416,7 +434,8 @@ footer{
 
 @media (min-width: 1440px) {
 	.inline-links{
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(4, 1fr);
+		padding: var(--size-3);
 	}
 
 }
