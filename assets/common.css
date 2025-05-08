@@ -392,15 +392,23 @@ footer{
 		padding-top: var(--size-3);
 		padding-bottom: var(--size-3);
 		gap: var(--size-2);
+		grid-auto-flow: dense;
 	}
 
 	#wide-block{
 		grid-column: span 2;
+		max-width: none;
+		min-width: 0;
+		width: 100%;
 		.portfolio-cover-image{
 			width: 100%;
+			grid-column: span 2;
+		}
+		.portfolio-blocks{
+			max-width: none;
+			min-width: none;
 		}
 	}
-
 }
 
 @media (min-width: 1440px) {
