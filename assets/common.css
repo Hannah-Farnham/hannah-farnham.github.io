@@ -92,7 +92,7 @@ h4{
 
 p{
 	color: var(--color-dark);
-	font-size: var(--size-1);
+	font-size: 14px;
 	line-height: 2.2ch;
 }
 
@@ -210,8 +210,6 @@ header{
 	height: 500px;
 	background-color: var(--color-light);
 	border: var(--color-light-grey) solid 2px;
-	/* max-width: 360px;
-	min-width: 343px; */
 	position: relative;
 	overflow: hidden;
 }
@@ -227,6 +225,14 @@ header{
 	object-fit: cover; 
 	object-position: center;
 	display: block;
+}
+
+.portfolio-blocks {
+	transition: transform 0.3s ease;
+}
+  
+.portfolio-blocks:hover {
+	transform: scale(1.06);
 }
 
 .portfolio-label{
@@ -277,8 +283,8 @@ header{
 	/* Footer */
 
 footer{
-	padding: var(--size-2);
-	background-color: var(--color-light-blue);
+	padding: var(--size-3);
+	background-color: var(--color-light);
 	margin-top: 2px;
 	display: flex;
 	flex-direction: column;
@@ -322,7 +328,7 @@ footer{
 	}
 	
 	p{
-		font-size: var(--size-1);
+		font-size: calc(var(--size-1) * .8);
 	}
 
 	header{
@@ -344,7 +350,6 @@ footer{
 		justify-content: flex-start;
 		align-items: center; 
 		gap: 2px;
-		position: relative;
 		height: 100%;
 	}
 	
@@ -371,7 +376,6 @@ footer{
 		display: block;
 		margin-top: var(--size-1);
 		width: 48px;
-		position: sticky;
 		top: 700px;
 		position: fixed;
 		z-index: 1800;

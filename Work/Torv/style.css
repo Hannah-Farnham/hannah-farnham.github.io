@@ -268,7 +268,7 @@ p{
 	}
 
 	p{
-		font-size: var(--size-0);
+		font-size: calc(var(--size-1) * .8);
 	}
 	
 

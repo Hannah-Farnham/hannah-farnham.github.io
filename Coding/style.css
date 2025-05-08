@@ -2,10 +2,10 @@
 	/* Header */
 
 header{
-	background-color: var(--color-light-orange);
+	background-color: var(--color-light);
 	margin-bottom: 2px;
 	h1, h2, p{
-		color: var(--color-x-dark-orange);
+		color: var(--color-dark);
 	}
 }
 
