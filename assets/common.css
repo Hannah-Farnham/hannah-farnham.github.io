@@ -148,8 +148,8 @@ nav{
 
 header{
 	padding: var(--size-2);
-	background-color: var(--color-light-blue);
 	overflow: hidden;
+	background-color: var(--color-light-blue);
 	h2{
 		color: var(--color-x-dark-blue);
 	}
@@ -225,14 +225,11 @@ header{
 	object-fit: cover; 
 	object-position: center;
 	display: block;
+	transition: transform 0.5s ease;
 }
 
-.portfolio-blocks {
-	transition: transform 0.3s ease;
-}
-  
-.portfolio-blocks:hover {
-	transform: scale(1.06);
+.portfolio-blocks:hover .portfolio-cover-image img {
+  transform: scale(1.1);
 }
 
 .portfolio-label{
@@ -260,16 +257,17 @@ header{
 
 .portfolio-blocks:hover{
 	.portfolio-label{
-		background-color: var(--color-light-blue);
-		border: var(--color-dark-blue) 2px solid;
+		bottom: 12px;
+		right: 12px;
+		border-color: var(--color-dark-blue);
 		p{
 			padding-inline: 8px;
-			color: var(--color-x-dark-blue);
+			color: var(--color-dark-blue);
 		}
 		.portfolio-divider{
 			background-color: var(--color-dark-blue);
-		}
 	}
+}
 }
 
 .portfolio-divider{
