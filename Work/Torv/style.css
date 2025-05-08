@@ -94,7 +94,6 @@ p{
 .case-study-section{
 	background-color: var(--color-light);
 	padding: var(--size-3);
-	padding-top: var(--size-10);
 }
 
 .case-study-image{
@@ -134,7 +133,7 @@ p{
 }
 
 .line-container {
-	padding-bottom: var(--size-10);
+	padding-bottom: var(--size-3);
 	background-color: white;
 	display: flex;
 	align-items: center;
@@ -296,6 +295,11 @@ p{
 	.case-study-section{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		padding-top: var(--size-10);
+	}
+	
+	.line-container {
+		padding-bottom: var(--size-10);
 	}
 
 	.case-study-info{
