@@ -74,7 +74,6 @@ p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 8%;
 	video{
 		object-fit: cover;
 		overflow: hidden;
@@ -165,7 +164,6 @@ p{
 		height: 320px;
 		object-fit: cover;
 		overflow: hidden;
-		border-radius: 8%;
 	}
 }
 
@@ -231,7 +229,6 @@ p{
 	display: flex;
 	width: fit-content;
 	padding-top: 12px;
-	border-radius: 16px;
 	border: 2px var(--color-light-grey) solid;
 }
 
@@ -240,7 +237,6 @@ p{
 .wide-image{
 	padding: var(--size-1);
 	background-color: var(--color-light-grey);
-	border-radius: 16px;
 }
 
 /* High-fidelity */
@@ -344,6 +340,5 @@ p{
 
 	.wide-image{
 		padding: var(--size-3);
-		border-radius: 32px;
 	}
 }
