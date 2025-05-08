@@ -290,7 +290,7 @@ footer{
 			font-size: calc(var(--size-1) * .8);
 		}
 		a:hover{
-			color: var(--color-x-dark-orange);
+			color: var(--color-dark-blue);
 		}
 		p{
 			font-size: calc(var(--size-1) * .8);
