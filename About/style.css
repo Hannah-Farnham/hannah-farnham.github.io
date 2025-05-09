@@ -41,7 +41,6 @@ header{
 
 .headshot{
 	overflow: hidden;
-	overflow: hidden;
 }
 
 
@@ -50,11 +49,7 @@ header{
 
 	#headshot-images{
 		grid-template-columns: repeat(4, auto);
-		grid-template-rows: repeat(2, 600px);
-	}
-	
-	#headshot-green{
-		grid-column: span 2;
+		grid-template-rows: repeat(2, 400px);
 	}
 
 	#headshot-blue-2{
@@ -75,6 +70,22 @@ header{
 
 
 @media (min-width: 1200px) {
+
+	.side-by-side{ 
+		display: flex;
+		header{
+			width: 40%;
+		}
+		#header-body{
+			display: flex;
+			flex-direction: column;
+			gap: var(--size-0);
+		}
+		h1{
+			line-height: 1.5ch;
+			margin-bottom: var(--size-1);
+		}
+	}
 
 	#about-intro{
 		padding-left: 600px;
