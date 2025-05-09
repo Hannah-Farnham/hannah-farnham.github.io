@@ -2,10 +2,10 @@
 	/* Header */
 
 header{
-	background-color: var(--color-light-orange);
+	background-color: var(--color-light-pink);
 margin-bottom: 2px;
 	h1, h2, p{
-		color: var(--color-light-pink);
+		color: var(--color-light-orange);
 	}
 }
 
@@ -14,7 +14,7 @@ margin-bottom: 2px;
 #page-highlight{
 	background-color: var(--color-light-orange);
 	a{
-		color: var(--color-x-dark-orange);
+		color: var(--color-light-pink);
 	}
 }
 
@@ -25,7 +25,7 @@ margin-bottom: 2px;
 		background-color: var(--color-light-orange);
 		border: var(--color-dark-orange) 2px solid;
 		p{
-			color: var(--color-x-dark-orange);
+			color: var(--color-light-pink);
 		}
 		.portfolio-divider{
 			background-color: var(--color-dark-orange);

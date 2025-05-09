@@ -2,13 +2,13 @@
 	/* Header */
 
 header{
-	background-color: var(--color-light-green);
+	background-color: var(--color-dark-sand);
 	margin-bottom: 2px;
 	h1, h2{
-		color: var(--color-x-dark-green);
+		color: var(--color-dark-blue);
 	}
 	p{
-		color: var(--color-x-dark-green);
+		color: var(--color-dark-blue);
 		margin-top: var(--size-1);
 	}
 }
