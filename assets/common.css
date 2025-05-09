@@ -260,12 +260,13 @@ header{
 		bottom: 12px;
 		right: 12px;
 		border-color: var(--color-dark-blue);
+		background-color: var(--color-light-blue);
 		p{
 			padding-inline: 8px;
-			color: var(--color-dark-blue);
+			color: var(--color-x-dark-blue);
 		}
 		.portfolio-divider{
-			background-color: var(--color-dark-blue);
+			background-color: var(--color-x-dark-blue);
 	}
 }
 }
