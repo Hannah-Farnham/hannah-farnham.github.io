@@ -1,26 +1,26 @@
 	
 	/* Header */
 
-header{
+/* header{
 	background-color: var(--color-light-pink);
 margin-bottom: 2px;
 	h1, h2, p{
 		color: var(--color-light-orange);
 	}
-}
+} */
 
 	/* Nav */
 
-#page-highlight{
+/* #page-highlight{
 	background-color: var(--color-light-orange);
 	a{
 		color: var(--color-light-pink);
 	}
-}
+} */
 
 /* Portfolio Blocks */
 
-.portfolio-blocks:hover{
+/* .portfolio-blocks:hover{
 	.portfolio-label{
 		background-color: var(--color-light-orange);
 		border: var(--color-dark-orange) 2px solid;
@@ -32,7 +32,7 @@ margin-bottom: 2px;
 		}
 	}
 
-}
+} */
 
 @media (min-width: 1100px) {
 

@@ -1,7 +1,7 @@
 	
 	/* Header */
 
-header{
+/* header{
 	background-color: var(--color-dark-sand);
 	margin-bottom: 2px;
 	h1, h2{
@@ -11,16 +11,16 @@ header{
 		color: var(--color-dark-blue);
 		margin-top: var(--size-1);
 	}
-}
+} */
 	
 		/* Nav */
 	
-#page-highlight{
+/* #page-highlight{
 	background-color: var(--color-light-green);
 	a{
 		color: var(--color-x-dark-green);
 	}
-}
+} */
 
 		/* Images */
 
