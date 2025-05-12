@@ -7,7 +7,7 @@ html {
 	/* Header */
 
 header{
-	padding: var(--size-2);
+	padding: var(--size-1);
 	background-color: var(--color-light);
 	margin-bottom: 2px;
 	display: flex;
@@ -92,7 +92,7 @@ p{
 
 .case-study-section{
 	background-color: var(--color-light);
-	padding: var(--size-3);
+	padding: var(--size-1);
 }
 
 .case-study-image{
