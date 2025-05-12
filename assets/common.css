@@ -68,7 +68,7 @@ body{
 h1{
 	font-family: var(--font-1);
 	font-size: 7vw;
-	font-weight: 400;
+	font-weight: 900;
 	line-height: 1.8ch;
 	margin-bottom: 0;
 	color: var(--color-dark);
@@ -393,14 +393,14 @@ footer{
 
 	footer{
 		gap: var(--size-1);
-		padding-top: var(--size-4);
-		padding-bottom: var(--size-4);
+		padding-top: var(--size-3);
+		padding-bottom: var(--size-3);
 	}
 
 	.bottom-row{
 		display: flex;
 		flex-direction: row;
-		gap: var(--size-3);
+		gap: var(--size-1);
 	}
 }
 
