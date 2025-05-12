@@ -38,7 +38,13 @@ margin-bottom: 2px;
 
 	.inline-links{
 		grid-template-columns: repeat(6, 1fr);
-		padding: var(--size-3);
+		padding: var(--size-1);
+	}
+
+	header{
+		h1{
+			padding-top: var(--size-8);
+		}
 	}
 
 	#wide-block{
