@@ -53,12 +53,12 @@ html {
 }
 
 ::selection {
-	background-color: var(--color-light-orange); 
-	color: var(--color-x-dark-orange); 
+	background-color: var(--color-light-blue); 
+	color: var(--color-x-dark-blue); 
 }
 
 body{
-	background-color: var(--color-light-grey);
+	background-color: var(--color-light);
 	font-family: var(--font-1);
 	overscroll-behavior: none;
 }
@@ -114,19 +114,17 @@ nav{
 	height: 62px;
 	overflow-x: auto;
 	scrollbar-width: none; 
+	padding: 8px;
 }
 
 .nav-item{
 	background-color: var(--color-light);
-	padding: var(--size-1);
 	flex-grow: 1;
 	text-align: center;
 	transition: 0.4s ease-in-out;
+	padding: 4px;
 	a{
 		text-align: center;
-		font-size: 12px;
-		font-weight: 100;
-		width: 100%;
 	}
 }
 
@@ -136,12 +134,14 @@ nav{
 
 .nav-item:hover{
 	background-color: var(--color-light-grey);
+	border-radius: 8px;
 }
 
 #page-highlight{
-	background-color: var(--color-dark-blue);
+	background-color: var(--color-light-grey);
+	border-radius: 8px;
 	a{
-		color: var(--color-light-pink);
+		color: var(--color-dark);
 	}
 }
 
@@ -150,7 +150,8 @@ nav{
 header{
 	padding: var(--size-1);
 	overflow: hidden;
-	background-color: var(--color-light);
+	background-color: var(--color-light-grey);
+	border-radius: var(--size-1);
 }
 
 #logo-animation{
@@ -331,6 +332,7 @@ footer{
 
 	.body-content{
 		margin-left: 2px;
+		padding: 8px;
 	}
 
 	nav{
@@ -338,7 +340,7 @@ footer{
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center; 
-		gap: 2px;
+		gap: 8px;
 		height: 100%;
 	}
 	
