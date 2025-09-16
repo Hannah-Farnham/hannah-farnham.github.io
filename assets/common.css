@@ -24,24 +24,24 @@
 	--color-light: #ffff;
 	--color-light-grey: #dee7ee;
 
-	--color-light-blue: #0C76CC;
+	--color-light-blue: rgb(12, 117, 202);
 	--color-dark-blue: #00579D;
-	--color-x-dark-blue: #0A3252;
+	--color-x-dark-blue: rgb(10, 50, 82);
 
-	/* --color-light-pink: #EAC2D6;
-	--color-dark-pink: #DE9EBE;
-	--color-x-dark-pink: #943A67;
+	--color-light-pink: #EAC2D6;
+	--color-dark-pink: rgb(222, 158, 190);
+	--color-x-dark-pink: rgb(148, 58, 103);
 
 	--color-light-green: #C0C89D;
 	--color-dark-green: #9EAA69;
 	--color-x-dark-green: #606D29;
 
-	--color-light-orange: #E06056;
+	--color-light-orange: rgb(224, 96, 86);
 	--color-dark-orange: #BB463D;
 	--color-x-dark-orange: #852119;
 
 	--color-light-sand: #F5F0E8;
-	--color-dark-sand: #EEE7DE; */
+	--color-dark-sand: #EEE7DE;
 
 	/* Fonts */
 	--font-1: "forma-djr-display", sans-serif;
@@ -234,6 +234,12 @@ header{
 	width: 100%;
 	height: 100%;
 	background: rgb(222, 231, 238, 0.4);
+	background: linear-gradient(
+		135deg,
+		rgb(148, 58, 103, 0.6),
+		rgb(12, 117, 202, 0.5),
+		rgb(224, 96, 86, 0.4)
+	);
 	z-index: 1;
 	transition: opacity 0.5s ease-out;
 }
