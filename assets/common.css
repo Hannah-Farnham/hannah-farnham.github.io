@@ -44,8 +44,8 @@
 	--color-dark-sand: #EEE7DE;
 
 	/* Fonts */
-	--font-1: "aktiv-grotesk", sans-serif;
-	--font-2: "aktiv-grotesk", sans-serif;
+	--font-1: "forma-djr-display", sans-serif;
+	--font-2: "forma-djr-mono", sans-serif;
 }
 
 html {
@@ -69,20 +69,17 @@ h1{
 	font-family: var(--font-1);
 	font-size: 7vw;
 	font-weight: 900;
-	line-height: 1.8ch;
 	margin-bottom: 0;
 	color: var(--color-dark);
 }
 
 h2{
 	font-size: var(--size-2);
-	line-height: 2ch;
 }
 
 h3{
 	font-size: var(--size-1);
 	font-weight: 500;
-	line-height: 2.2ch
 }
 
 h4{
@@ -93,7 +90,6 @@ h4{
 p{
 	color: var(--color-dark);
 	font-size: 14px;
-	line-height: 2.2ch;
 }
 
 em{
@@ -154,14 +150,7 @@ nav{
 header{
 	padding: var(--size-1);
 	overflow: hidden;
-	background-color: var(--color-dark-blue);
-	h1{
-		color: var(--color-light-pink);
-		padding-bottom: 4px;
-	}
-	p{
-		color: var(--color-light-pink);
-	}
+	background-color: var(--color-light);
 }
 
 #logo-animation{
@@ -251,26 +240,20 @@ header{
 	justify-content: center;
 	align-items: center;
 	p{
-		font-size: calc(var(--size-1)*.8);
+		font-family: var(--font-2);
+		font-size: calc(var(--size-1)*.7);
 		flex-grow: 1;
-		padding-inline: 6px;
+		padding-inline: 8px;
 		transition: 0.4s ease-in-out;
+		padding-bottom: 4px;
 	}
 }
 
 .portfolio-blocks:hover{
 	.portfolio-label{
-		bottom: 12px;
-		right: 12px;
-		border-color: var(--color-dark-pink);
-		background-color: var(--color-light-pink);
 		p{
-			padding-inline: 8px;
-			color: var(--color-dark-blue);
+			padding-inline: 10px;
 		}
-		.portfolio-divider{
-			background-color: var(--color-dark-blue);
-	}
 }
 }
 
@@ -373,8 +356,9 @@ footer{
 		align-items: center;
 		flex-grow: 0;
 		a{
+			font-family: var(--font-2);
 			font-size: var(--size-0);
-			line-height: 2ch;
+			line-height: 1ch;
 		}
 	}
 
