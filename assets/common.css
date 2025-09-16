@@ -19,16 +19,16 @@
 
 	/* Colors */
 
-	--color-dark: #04232A;
-	--color-dark-grey: #9f9f9f;
+	--color-dark: #0c2538;
+	--color-dark-grey: #92a4b3;
 	--color-light: #ffff;
-	--color-light-grey: #E9E9E9;
+	--color-light-grey: #dee7ee;
 
 	--color-light-blue: #0C76CC;
 	--color-dark-blue: #00579D;
 	--color-x-dark-blue: #0A3252;
 
-	--color-light-pink: #EAC2D6;
+	/* --color-light-pink: #EAC2D6;
 	--color-dark-pink: #DE9EBE;
 	--color-x-dark-pink: #943A67;
 
@@ -41,11 +41,12 @@
 	--color-x-dark-orange: #852119;
 
 	--color-light-sand: #F5F0E8;
-	--color-dark-sand: #EEE7DE;
+	--color-dark-sand: #EEE7DE; */
 
 	/* Fonts */
 	--font-1: "forma-djr-display", sans-serif;
 	--font-2: "forma-djr-mono", sans-serif;
+	--font-3: "forma-djr-text", sans-serif;
 }
 
 html {
@@ -58,7 +59,7 @@ html {
 }
 
 body{
-	background-color: var(--color-light);
+	background-color: var(--color-light-grey);
 	font-family: var(--font-1);
 	overscroll-behavior: none;
 }
@@ -89,22 +90,18 @@ h4{
 
 p{
 	color: var(--color-dark);
-	font-size: 14px;
+	font-size: 16px;
+	font-family: var(--font-3);
 }
 
 em{
 	font-style: italic;
 }
 
-.orange-period{
-	font-style: normal;
-	color: var(--color-light-orange);
-}
-
 	/* Nav */
 
 nav{
-	background-color: var(--color-light);
+	background-color: var(--color-light-grey);
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
@@ -118,7 +115,7 @@ nav{
 }
 
 .nav-item{
-	background-color: var(--color-light);
+	background-color: var(--color-light-grey);
 	flex-grow: 1;
 	text-align: center;
 	transition: 0.4s ease-in-out;
@@ -133,13 +130,13 @@ nav{
 }
 
 .nav-item:hover{
-	background-color: var(--color-light-grey);
-	border-radius: 8px;
+	background-color: #ffffff85;
+	border-radius: 21px;
 }
 
 #page-highlight{
-	background-color: var(--color-light-grey);
-	border-radius: 8px;
+	background-color: var(--color-light);
+	border-radius: 21px;
 	a{
 		color: var(--color-dark);
 	}
@@ -150,8 +147,10 @@ nav{
 header{
 	padding: var(--size-1);
 	overflow: hidden;
-	background-color: var(--color-light-grey);
+	background-color: var(--color-light);
 	border-radius: var(--size-1);
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #logo-animation{
@@ -188,6 +187,11 @@ header{
 
 	/* Portfolio Blocks */
 
+.portfolio-content{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
 .inline-links{
 	background-color: var(--color-light);
 	padding: var(--size-1);
@@ -196,13 +200,14 @@ header{
 	justify-content: center;	
 	gap: var(--size-1);
 	align-items: start;
+	border-radius: var(--size-1);
 }
 
 .portfolio-blocks{
 	text-align: center;
 	height: 500px;
 	background-color: var(--color-light);
-	border: var(--color-light-grey) solid 2px;
+	border-radius: 12px;
 	position: relative;
 	overflow: hidden;
 }
@@ -210,6 +215,7 @@ header{
 .portfolio-cover-image{
 	margin-bottom: var(--size-1);
 	overflow: hidden;
+	background-color: white;
 }
 
 .portfolio-cover-image img{
@@ -221,15 +227,30 @@ header{
 	transition: transform 0.5s ease;
 }
 
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(222, 231, 238, 0.4);
+	z-index: 1;
+	transition: opacity 0.5s ease-out;
+}
+
 .portfolio-blocks:hover .portfolio-cover-image img {
-  transform: scale(1.1);
+	transform: scale(1.02);
+}
+
+.portfolio-blocks:hover .overlay{
+	opacity: 0;
 }
 
 .portfolio-label{
+	z-index: 2;
 	padding: 6px;
 	padding-top: 8px;
 	background-color: var(--color-light);
-	border: var(--color-light-grey) solid 2px;
 	position: absolute;
 	bottom: var(--size-0);
 	right: var(--size-0);
@@ -242,7 +263,7 @@ header{
 	align-items: center;
 	p{
 		font-family: var(--font-2);
-		font-size: calc(var(--size-1)*.7);
+		font-size: 14px;
 		flex-grow: 1;
 		padding-inline: 8px;
 		transition: 0.4s ease-in-out;
@@ -270,26 +291,28 @@ header{
 
 footer{
 	padding: var(--size-1);
-	background-color: var(--color-light-pink);
 	margin-top: 2px;
 	display: flex;
+	align-items: center;
+	background-color: var(--color-light);
+	border-radius: var(--size-1);
 	flex-direction: column;
-	gap: var(--size-1);
-		h1{
-			color: var(--color-dark-blue);
-		}
-		a{
-			color: var(--color-dark-blue);
-			text-decoration: underline;
-			line-height: 2.2ch;
-			font-size: calc(var(--size-1) * .8);
-		}
-		a:hover{
-			color: var(--color-x-dark-blue);
-		}
-		p{
-			font-size: calc(var(--size-1) * .8);
-			color: var(--color-dark-blue);
+	justify-content: space-between;
+	height: 800px;
+		.bottom-row{
+			a{
+				font-family: var(--font-2);
+				text-decoration: underline;
+				line-height: 2.2ch;
+				font-size: calc(var(--size-1) * .8);
+			}
+			a:hover{
+				color: var(--color-x-dark-blue);
+			}
+			p{
+				font-family: var(--font-2);
+				font-size: calc(var(--size-1) * .8);
+			}
 		}
 	}
 
@@ -318,11 +341,13 @@ footer{
 	}
 	
 	p{
-		font-size: calc(var(--size-1) * .8);
+		font-size: 20px;
 	}
 
 	header{
 		padding: var(--size-1);
+		padding-left: 40px;
+		padding-bottom: var(--size-2);
 	}
 
 	body{
@@ -331,8 +356,8 @@ footer{
 	}
 
 	.body-content{
-		margin-left: 2px;
 		padding: 8px;
+		padding-left: 0px;
 	}
 
 	nav{
@@ -359,7 +384,7 @@ footer{
 		flex-grow: 0;
 		a{
 			font-family: var(--font-2);
-			font-size: var(--size-0);
+			font-size: 14px;
 			line-height: 1ch;
 		}
 	}
@@ -378,7 +403,7 @@ footer{
 	}
 
 	footer{
-		gap: var(--size-1);
+		gap: var(--size-2);
 		padding-top: var(--size-3);
 		padding-bottom: var(--size-3);
 	}
@@ -386,7 +411,7 @@ footer{
 	.bottom-row{
 		display: flex;
 		flex-direction: row;
-		gap: var(--size-1);
+		gap: var(--size-4);
 	}
 }
 
