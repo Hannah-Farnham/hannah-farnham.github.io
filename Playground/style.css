@@ -1,39 +1,4 @@
-	
-	
-	/* Header */
 
-/* header{
-	background-color: var(--color-dark-pink);
-	margin-bottom: 2px;
-	h1, h2, p{
-		color: var(--color-dark-blue);
-	}
-}
-
-	/* Nav */
-/* 
-#page-highlight{
-	background-color: var(--color-light-pink);
-	a{
-		color: var(--color-dark-blue);
-	}
-}  */
-
-/* Portfolio Blocks */
-
-/* .portfolio-blocks:hover{
-	.portfolio-label{
-		background-color: var(--color-light-pink);
-		border: var(--color-dark-pink) 2px solid;
-		p{
-			color: var(--color-dark-blue);
-		}
-		.portfolio-divider{
-			background-color: var(--color-dark-pink);
-		}
-	}
-
-} */
 
 header{
 	display: flex;
