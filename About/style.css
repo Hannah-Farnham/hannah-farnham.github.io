@@ -4,6 +4,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	height: auto;
 	margin-right: 8px;
 	margin-bottom: 8px;
 	padding-top: var(--size-2);
