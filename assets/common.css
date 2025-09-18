@@ -54,8 +54,8 @@ html {
 }
 
 ::selection {
-	background-color: var(--color-light-blue); 
-	color: var(--color-x-dark-blue); 
+	background-color: var(--color-x-dark-blue); 
+	color: var(--color-light-blue); 
 }
 
 body{
