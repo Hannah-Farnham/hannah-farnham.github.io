@@ -39,7 +39,8 @@ p{
 	border-bottom: var(--color-light-grey) solid 2px;
 	overflow: hidden;
 	overflow-x: auto;
-	scrollbar-width: none; 
+	scrollbar-width: none;
+	border-radius: 8px; 
 	ul{
 		display: flex;
 		flex-direction: row;
