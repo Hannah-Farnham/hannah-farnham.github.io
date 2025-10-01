@@ -82,8 +82,9 @@ p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 8px;
-	video{
+	border-radius: var(--size-1);
+	height: 100vh;
+	img{
 		object-fit: cover;
 		overflow: hidden;
 		width: 100%;
