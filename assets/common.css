@@ -156,12 +156,11 @@ header{
 	border-radius: var(--size-1);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	height: 500px;
 }
 
 #logo-animation{
-	height: 200px;
+	flex: 1;
 	position: relative;
 	--gap: clamp(8px, 2vw, 20px);
 	--gif-size: clamp(96px, 10vw, 240px);
@@ -342,9 +341,6 @@ footer{
 		padding: var(--size-1);
 		padding-left: 40px;
 		padding-bottom: var(--size-2);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
 		height: 400px;
 	}
 
