@@ -16,7 +16,7 @@ header{
 	gap: var(--size-1);
 	div{
 		display: flex;
-		justify-content: center;
+		justify-content: end;
 		flex-direction: column;
 	}
 	svg{
