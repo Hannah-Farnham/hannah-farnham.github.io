@@ -40,9 +40,6 @@
 	--color-dark-orange: #BB463D;
 	--color-x-dark-orange: #852119;
 
-	--color-light-sand: #F5F0E8;
-	--color-dark-sand: #EEE7DE;
-
 	/* Fonts */
 	--font-1: "forma-djr-display", sans-serif;
 	--font-2: "forma-djr-mono", sans-serif;
@@ -82,10 +79,12 @@ h2{
 h3{
 	font-size: var(--size-1);
 	font-weight: 500;
+	color: var(--color-dark);
 }
 
 h4{
 	font-size: var(--size-1);
+	font-family: var(--font-2);
 	color: var(--color-dark-grey);
 }
 

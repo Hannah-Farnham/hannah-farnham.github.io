@@ -10,7 +10,9 @@ header{
 	padding: var(--size-1);
 	background-color: var(--color-light);
 	margin-bottom: 2px;
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: auto;
 	svg{
 		padding-left: var(--size-1);
 	}
@@ -25,6 +27,10 @@ h2{
 	color: var(--color-dark)
 }
 
+h4{
+	padding-bottom: 8px;
+}
+
 p{
 	max-width: 65ch;
 }
@@ -32,7 +38,7 @@ p{
 	/* Mini Nav */
 
 .mini-nav{
-	padding: 17.7px;
+	padding: var(--size-2);
 	background-color: var(--color-light);
 	position: sticky;
 	top: 0px;
@@ -40,7 +46,7 @@ p{
 	overflow: hidden;
 	overflow-x: auto;
 	scrollbar-width: none;
-	border-radius: 8px; 
+	border-radius: var(--size-1);
 	ul{
 		display: flex;
 		flex-direction: row;
@@ -49,23 +55,24 @@ p{
 		gap: var(--size-1);
 	}
 	a{
-		color: var(--color-dark-grey);
+		color: var(--color-dark);
+		font-family: var(--font-2);
 		font-size: 12px;
 		text-wrap: nowrap;
+		opacity: 25%;
 	}
 }
 
 .mini-nav a:hover{
-	color: var(--color-dark);	
+	opacity: 50%;
 }
 
 .mini-nav a:active{
-	color: #2652E9;
+	opacity: 100%;
 }
 
 .mini-nav a.active {
-	color: #2652E9;
-	border-bottom: 1px solid #2652E9;
+	opacity: 100%;
 }
 
 	/* Intro Section */
@@ -75,6 +82,7 @@ p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 8px;
 	video{
 		object-fit: cover;
 		overflow: hidden;
@@ -83,17 +91,12 @@ p{
 	}
 }
 
-#intro-section{
-	em{
-		color: #2652E9;
-	}
-}
-
 	/* Page Layout */
 
 .case-study-section{
 	background-color: var(--color-light);
 	padding: var(--size-1);
+	border-radius: var(--size-1);
 }
 
 .case-study-image{
@@ -171,9 +174,6 @@ p{
 .user-text{
 	display: flex;
 	flex-direction: column;
-	h3{
-		color: #2652E9;
-	}
 }
 
 .user-description{
@@ -220,9 +220,6 @@ p{
 .sketch-text{
 	display: flex;
 	flex-direction: column;
-	h3{
-		color: #2652E9;
-	}
 }
 
 .idea{
@@ -264,12 +261,8 @@ p{
 	header{
 		padding: var(--size-3);
 		h1{
-			font-size: var(--size-3);
+			font-size: var(--size-5);
 		}
-	}
-
-	p{
-		font-size: calc(var(--size-1) * .8);
 	}
 	
 
@@ -278,7 +271,7 @@ p{
 	#intro-section{
 		align-items: center;
 		justify-content: center;
-		padding: var(--size-3);
+		padding: 0px;
 	}
 
 	#intro-text{
@@ -290,8 +283,6 @@ p{
 	/* Page Layout */
 
 	.case-study-section{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 		padding-top: var(--size-10);
 	}
 	
@@ -332,7 +323,7 @@ p{
 	.mini-nav{
 		padding-left: var(--size-3);
 		a{
-			font-size: 16px;
+			font-size: 14px;
 		}
 		ul{
 			gap: var(--size-3)
