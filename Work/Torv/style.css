@@ -9,10 +9,16 @@ html {
 header{
 	padding: var(--size-1);
 	background-color: var(--color-light);
-	margin-bottom: 2px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 8px;
+	display: flex;
+	flex-direction: row;
 	height: auto;
+	gap: var(--size-1);
+	div{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
 	svg{
 		padding-left: var(--size-1);
 	}
@@ -47,6 +53,7 @@ p{
 	overflow-x: auto;
 	scrollbar-width: none;
 	border-radius: var(--size-1);
+	margin-bottom: 8px;
 	ul{
 		display: flex;
 		flex-direction: row;
@@ -96,8 +103,9 @@ p{
 
 .case-study-section{
 	background-color: var(--color-light);
-	padding: var(--size-1);
+	padding: var(--size-3);
 	border-radius: var(--size-1);
+	margin-bottom: 8px;
 }
 
 .case-study-image{
@@ -118,7 +126,6 @@ p{
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-1);
-	padding-top: var(--size-1);
 	br{
 		height: 4px;;
 	}
@@ -265,7 +272,6 @@ p{
 			font-size: var(--size-5);
 		}
 	}
-	
 
 	/* Intro Section */
 
@@ -282,19 +288,9 @@ p{
 	}
 
 	/* Page Layout */
-
-	.case-study-section{
-		padding-top: var(--size-10);
-	}
 	
 	.line-container {
 		padding-bottom: var(--size-10);
-	}
-
-	.case-study-info{
-		padding: var(--size-3);
-		padding-top: 0px;
-		padding-bottom: 0px;
 	}
 
 	#problem-grid{
