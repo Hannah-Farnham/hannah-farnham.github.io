@@ -70,6 +70,14 @@ p{
 	}
 }
 
+	.mini-nav{
+		transition: margin 0.3s ease, background-color 0.3s ease;
+	}
+
+	.mini-nav.scrolled {
+		background-color: rgba(255, 255, 255, 0.95); 
+	}
+
 .mini-nav a:hover{
 	opacity: 50%;
 }
@@ -160,6 +168,13 @@ p{
 	gap: var(--size-2);
 	img{
 		border-radius: 16px;
+	}
+}
+
+#research-section{
+	p{
+		font-size: 16px;
+		max-width: 250px;
 	}
 }
 
@@ -350,12 +365,20 @@ p{
 
 	.mini-nav{
 		padding-left: var(--size-3);
+		top: 8px;
+		transition: margin 0.3s ease, background-color 0.3s ease;
 		a{
 			font-size: 14px;
 		}
 		ul{
 			gap: var(--size-3)
 		}
+	}
+
+	.mini-nav.scrolled {
+		margin-right: 8px;
+		margin-left: 8px;
+		background-color: rgba(255, 255, 255, 0.9); 
 	}
 
 	.wide-image{

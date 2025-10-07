@@ -1,7 +1,8 @@
-const layout = document.getElementById('layout');
-const toggleBtn = document.getElementById('navToggle');
-
-toggleBtn.addEventListener('click', () => {
-  const collapsed = layout.classList.toggle('is-collapsed');
-  toggleBtn.setAttribute('aria-expanded', String(!collapsed));
+window.addEventListener("scroll", function () {
+  const nav = document.querySelector(".nav"); // adjust selector
+  if (window.scrollY > 50) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
 });

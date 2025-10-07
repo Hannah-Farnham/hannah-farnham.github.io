@@ -81,6 +81,17 @@
 				</ul>
 			</div>
 
+			 <script>
+				window.addEventListener("scroll", function () {
+				const nav = document.querySelector(".mini-nav");
+				if (window.scrollY > 50) {
+					nav.classList.add("scrolled");
+				} else {
+					nav.classList.remove("scrolled");
+				}
+				});
+			</script>
+
 			<section class="case-study-section" id="image-section">
 				<div id="full-width-image">
 					<img src="Images/Mockup 1.png" alt="User">
@@ -195,50 +206,39 @@
 				</div>
 				<div class="users">
 					<div class="one-user">
-						<div class="user-text">
-							<h4>Insight</h4>
-							<h3>People need familiarity when meeting new people to feel safe.</h3>
-						</div>
+						<h3>Vee Mai</h3>
+						<h4> New to the city, Introvert, Creative</h4>
 						<div>
 							<img src="Images/Vee.png" alt="User">
 						</div>
+						<p>
+							“I would find a mutual friend or friend to try new things with me.”
+						</p>
 						<div class="user-text">
-							<div class="quote">
-								<p>
-									“I would find a mutual friend or friend to try new things with me.”
-								</p>
-							</div>
-							<h3>Vee Mai</h3>
+							<h4>Insight</h4>
+							<p>People need familiarity when meeting new people to feel safe.</p>
 						</div>
 						<div class="user-text">
 							<h4>How Might We</h4>
-							<h3>Make users feel safe and familiar while meeting new people online?</h3>
+							<p>Make users feel safe and familiar while meeting new people online?</p>
 						</div>
-						</div>
+					</div>
 					<div class="one-user">
-						<div class="user-text">
-							<h4>Insight</h4>
-							<h3>People want to build relationships naturally.</h3>
-						</div>
+						<h3>Emma de Suyrot</h3>
+						<h4> New to the city, Extrovert, Athletic</h4>
 						<div>
 							<img src="Images/emma.jpeg" alt="User">
 						</div>
+						<p>
+							“When you first meet someone and it fits, you know.”
+						</p>
 						<div class="user-text">
-							<div class="quote">
-								<p>
-									“When you first meet someone and it fits, you know.”
-								</p>
-							</div>
-							<p><em>Emma de Suyrot</em></p>
-							<div class="user-description">
-								<p>New to the city</p>
-								<p>Extrovert</p>
-								<p>Athletic</p>
-							</div>
+							<h4>Insight</h4>
+							<p>People want to build relationships naturally..</p>
 						</div>
 						<div class="user-text">
 							<h4>How Might We</h4>
-							<h3>Create a natural feeling when people are meeting online?</h3>
+							<p>Create a natural feeling when people are meeting online?.</p>
 						</div>
 					</div>
 					<div class="one-user">
@@ -249,11 +249,11 @@
 							<div>
 								<img src="Images/Rice.jpeg" alt="User">
 							</div>
-							<!-- Fix indentation -->
 							<div class="user-text">
 								<div class="quote">
-									<p>
+									<p> <em>
 										“I need to have common beliefs with my friends.”
+										</em>
 									</p>
 								</div>
 								<p><em>Rice Gallardo</em></p>
