@@ -54,12 +54,14 @@ p{
 	scrollbar-width: none;
 	border-radius: var(--size-1);
 	margin-bottom: 8px;
+	transition: all 0.5s ease;
 	ul{
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
 		gap: var(--size-1);
+		transition: justify-content 1.2s ease-in-out, transform 1.2s ease-in-out;
 	}
 	a{
 		color: var(--color-dark);
@@ -70,12 +72,16 @@ p{
 	}
 }
 
-	.mini-nav{
-		transition: margin 0.3s ease, background-color 0.3s ease;
-	}
-
 	.mini-nav.scrolled {
-		background-color: rgba(255, 255, 255, 0.95); 
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		background: rgba(255, 255, 255, 0.3); 
+		border: 1px solid var(--color-light-grey);
+		transition: all 0.3s ease;
+		padding: 16px;
+		margin-left: 8px;
+		margin-right: 8px;
+		top: 8px;
 	}
 
 .mini-nav a:hover{
@@ -117,9 +123,12 @@ p{
 
 .case-study-section{
 	background-color: var(--color-light);
-	padding: var(--size-3);
+	padding: var(--size-2);
 	border-radius: var(--size-1);
 	margin-bottom: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-1);
 	ul {
 		list-style-type: disc;
 		padding-left: var(--size-1); 
@@ -266,11 +275,6 @@ p{
 	}
 }
 
-.sketch-text{
-	display: flex;
-	flex-direction: column;
-}
-
 .idea{
 	padding: var(--size-0);
 	display: flex;
@@ -315,6 +319,7 @@ p{
 	}
 
 	.case-study-section{
+		padding: var(--size-3);
 		padding-top: var(--size-5);
 		padding-bottom: var(--size-6);
 		li{
@@ -345,11 +350,6 @@ p{
 		gap: var(--size-5);
 	}
 
-	#research-section, #ideation-section, #low-fidelity-section, #high-fidelity-section, #testing-section{
-		grid-template-columns: repeat(1, 1fr);	
-		gap: var(--size-1);
-	}
-
 	.users{
 		flex-direction: row;
 	}
@@ -366,19 +366,24 @@ p{
 	.mini-nav{
 		padding-left: var(--size-3);
 		top: 8px;
-		transition: margin 0.3s ease, background-color 0.3s ease;
 		a{
 			font-size: 14px;
 		}
 		ul{
-			gap: var(--size-3)
+			gap: var(--size-3);
 		}
 	}
 
 	.mini-nav.scrolled {
 		margin-right: 8px;
 		margin-left: 8px;
-		background-color: rgba(255, 255, 255, 0.9); 
+		padding: 24px;
+		padding-left: 24px;
+		transition: all 0.5s ease;
+		width: auto;
+		ul{
+			justify-content: center;
+		}
 	}
 
 	.wide-image{
