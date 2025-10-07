@@ -13,7 +13,7 @@ header{
 	display: flex;
 	flex-direction: row;
 	height: auto;
-	gap: var(--size-1);
+	gap: var(--size-2);
 	div{
 		display: flex;
 		justify-content: end;
@@ -158,6 +158,9 @@ p{
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-2);
+	img{
+		border-radius: 16px;
+	}
 }
 
 .bullet-point{
