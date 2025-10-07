@@ -127,6 +127,8 @@ nav{
 	padding: 12px;
 	a{
 		text-align: center;
+		font-family: var(--font-2);
+        font-size: 12px;
 	}
 }
 
