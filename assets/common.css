@@ -299,24 +299,32 @@ footer{
 	padding: var(--size-1);
 	margin-top: 2px;
 	display: flex;
-	background-color: var(--color-light);
+	background-color: var(--color-dark);
 	border-radius: var(--size-1);
 	flex-direction: column;
 	justify-content: space-between;
 	height: 97vh;
+	h1{
+		color: var(--color-light-blue);
+	}
+	p{
+		color: var(--color-light-blue);
+	}
 		.bottom-row{
 			a{
 				font-family: var(--font-2);
 				text-decoration: underline;
 				line-height: 2.2ch;
 				font-size: calc(var(--size-1) * .8);
+				color: var(--color-light-blue);
 			}
 			a:hover{
-				color: var(--color-x-dark-blue);
+				color: var(--color-dark-pink);
 			}
 			p{
 				font-family: var(--font-2);
 				font-size: calc(var(--size-1) * .8);
+				color: var(--color-light-blue);
 			}
 		}
 	}
