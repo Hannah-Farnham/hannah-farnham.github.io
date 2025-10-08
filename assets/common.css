@@ -50,6 +50,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+html, body {
+	cursor: url("/cursor.png") 4 2, pointer;   /* hotspot x y */
+}
+
+a, button {
+	cursor: url("/Cursor-clicked.png") 6 2, pointer;
+}
+
 ::selection {
 	background-color: var(--color-x-dark-blue); 
 	color: var(--color-light-blue); 
