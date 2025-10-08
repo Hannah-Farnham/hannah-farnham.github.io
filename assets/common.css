@@ -136,7 +136,7 @@ nav{
 	a{
 		text-align: center;
 		font-family: var(--font-2);
-        font-size: 12px;
+		font-size: 12px;
 	}
 }
 
@@ -269,7 +269,7 @@ header{
 	align-items: center;
 	p{
 		font-family: var(--font-2);
-		font-size: 14px;
+		font-size: 12px;
 		flex-grow: 1;
 		padding-inline: 8px;
 		transition: 0.4s ease-in-out;
@@ -413,7 +413,7 @@ footer:hover{
 		display: block;
 		margin-top: var(--size-1);
 		width: 48px;
-		top: 700px;
+		top: 720px;
 		position: fixed;
 		z-index: 1800;
 	}
@@ -445,6 +445,12 @@ footer:hover{
 
 	h1{
 		font-size: 4vw;
+	}
+
+	.portfolio-label{
+		p{
+			font-size: 14px;
+		}
 	}
 
 	.inline-links{
