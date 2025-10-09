@@ -300,6 +300,7 @@ p{
 		object-fit: cover;
 		overflow: hidden;
 		border-radius: 16px;
+		max-width: 1100px;
 	}
 
 }
