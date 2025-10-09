@@ -305,6 +305,9 @@ footer{
 	justify-content: space-between;
 	height: 97vh;
 	transition: 1s ease-in-out;
+	h1{
+		font-size: 60px;
+	}
 		.bottom-row{
 			a{
 				font-family: var(--font-2);
@@ -427,6 +430,9 @@ footer:hover{
 		padding-top: var(--size-3);
 		padding-bottom: var(--size-3);
 		align-items: center;
+		h1{
+			font-size: var(--size-4);
+		}
 	}
 
 	.footer-text{
