@@ -432,6 +432,7 @@ footer:hover{
 		align-items: center;
 		h1{
 			font-size: var(--size-4);
+			text-align: center;
 		}
 	}
 

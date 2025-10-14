@@ -72,6 +72,10 @@ p{
 	}
 }
 
+#last-item{
+	padding-right: 24px;
+}
+
 	.mini-nav.scrolled {
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
@@ -445,7 +449,7 @@ p{
 			font-size: 14px;
 		}
 		ul{
-			gap: var(--size-3);
+			gap: var(--size-1);
 		}
 	}
 
@@ -461,11 +465,25 @@ p{
 		border-radius: 0px 0px 20px 20px;
 		ul{
 			justify-content: center;
-			gap: 32px;
+			gap: var(--size-1);
 		}
+	}
+
+	#last-item{
+		padding-right: 0px;
 	}
 
 	.wide-image{
 		padding: var(--size-3);
 	}
 }
+
+@media (min-width: 1200px) {
+	.mini-nav{
+		ul{
+			gap: var(--size-3);
+		}
+	}
+}
+
+
