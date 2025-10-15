@@ -225,6 +225,10 @@ p{
 		font-size: 16px;
 		max-width: 250px;
 	}
+	#large-size-body{
+		font-size: 20px;
+		max-width: none;
+	}
 }
 
 .bullet-point{
@@ -278,19 +282,6 @@ p{
 	display: flex;
 	flex-direction: column;
 	gap: 8px
-}
-
-.user-description{
-	p{
-		color: var(--color-dark-grey);
-	}
-}
-
-.quote{
-	p{
-		font-size: var(--size-1);
-	}
-	padding-bottom: var(--size-0);
 }
 
 .vertical-line {
@@ -351,7 +342,7 @@ p{
 	background-color: var(--color-light-grey);
 }
 
-#low-fidelity-section, #testing-section, #research-section{
+#low-fidelity-section, #testing-section{
 	img{
 		object-fit: cover;
 		overflow: hidden;
@@ -400,7 +391,7 @@ p{
 	}
 }
 
-#low-fidelity-section, #testing-section, #high-fidelity-section, #research-section{
+#low-fidelity-section, #testing-section, #high-fidelity-section{
 	display: flex;
 	flex-direction: column;	
 	gap: var(--size-2);
