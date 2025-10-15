@@ -48,7 +48,6 @@ p{
 	background-color: var(--color-light);
 	position: sticky;
 	top: 0px;
-	border-bottom: var(--color-light-grey) solid 2px;
 	overflow: hidden;
 	overflow-x: auto;
 	scrollbar-width: none;
@@ -98,7 +97,7 @@ p{
 	opacity: 100%;
 }
 
-#image-section{
+.image-section{
 	align-items: center;
 	justify-content: center;	
 	padding: 0px;
