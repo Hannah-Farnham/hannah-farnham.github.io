@@ -400,7 +400,7 @@ p{
 	}
 }
 
-#low-fidelity-section, #testing-section, #high-fidelity-section{
+#low-fidelity-section, #testing-section, #high-fidelity-section, #research-section{
 	display: flex;
 	flex-direction: column;	
 	gap: var(--size-2);
