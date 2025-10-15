@@ -299,6 +299,21 @@ p{
 	background-color: var(--color-light-grey);
 }
 
+/* Quote */
+
+#quote-section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1{
+		max-width: 35ch;
+		font-size: 4vw;
+		text-align: center;
+		font-family: var(--font-3);
+		font-weight: 100;
+	}
+}
+
 /* Ideation */
 
 .sketches{
@@ -336,7 +351,7 @@ p{
 	background-color: var(--color-light-grey);
 }
 
-#low-fidelity-section, #testing-section{
+#low-fidelity-section, #testing-section, #research-section{
 	img{
 		object-fit: cover;
 		overflow: hidden;
