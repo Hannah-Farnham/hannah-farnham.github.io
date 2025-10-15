@@ -117,7 +117,8 @@ p{
 	align-items: center;
 	border-radius: var(--size-1);
 	height: 80vh;
-		img{
+	width: 100%;
+	img{
 		object-fit: cover;
 		overflow: hidden;
 		width: 100%;
