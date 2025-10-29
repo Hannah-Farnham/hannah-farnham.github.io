@@ -27,6 +27,15 @@ header{
 	}
 }
 
+
+.header-long-title{
+	gap: 8px;
+	h1{
+		font-size: var(--size-3);
+		width: 70vw;
+	}
+}
+
 	/* Fonts */
 
 h2{
@@ -428,6 +437,14 @@ p{
 			font-size: var(--size-5);
 		}
 	}
+
+	.header-long-title{
+	gap: 8px;
+	h1{
+		font-size: var(--size-5);
+		width: 75vw;
+	}
+}
 
 	.case-study-section{
 		padding: var(--size-3);
