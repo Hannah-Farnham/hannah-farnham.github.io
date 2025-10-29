@@ -228,7 +228,7 @@ p{
 	}
 	#large-size-body{
 		font-size: 20px;
-		max-width: none;
+		max-width: 65ch;
 	}
 }
 
