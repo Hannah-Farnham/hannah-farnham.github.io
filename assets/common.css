@@ -294,6 +294,59 @@ header{
 	transition: 0.4s ease-in-out;
 }
 
+	/* Scroll Animation */
+
+.scroll-scene {
+	position: relative;
+	height: 200vh; /* or 220vh; anything > 100vh works */
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	z-index: 0; 
+}
+
+.panel--back {
+	z-index: 1;
+}
+
+.panel--front {
+	z-index: 2;
+	transform: translateY(calc((1 - var(--progress)) * 100%));
+	will-change: transform;
+	display: block; 
+}
+
+footer { position: relative; z-index: 0; }
+
+.portfolio-blocks {
+	transform: translateY(40px);
+	opacity: 0;
+	transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.portfolio-blocks.visible {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+header.gone {
+	opacity: 0 !important;
+	visibility: hidden !important;
+	pointer-events: none !important;
+}
+
+header.is-fading {
+	transition: opacity 300ms ease, transform 300ms ease, filter 300ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.panel--front { transform: none !important; }
+	.scroll-scene { height: auto; }
+}
+
 	/* Footer */
 
 footer{
@@ -306,6 +359,7 @@ footer{
 	justify-content: space-between;
 	height: 97vh;
 	transition: 1s ease-in-out;
+	z-index: 4;
 	h1{
 		font-size: 60px;
 	}
@@ -431,6 +485,7 @@ footer:hover{
 		padding-top: var(--size-3);
 		padding-bottom: var(--size-3);
 		align-items: center;
+		z-index: 4;
 		h1{
 			font-size: var(--size-4);
 			text-align: center;
