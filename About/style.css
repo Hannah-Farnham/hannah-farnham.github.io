@@ -12,6 +12,7 @@ header{
 
 h1{
 	margin-bottom: var(--size-3);
+	font-size: 6vw;
 }
 		/* Images */
 
@@ -29,6 +30,12 @@ h1{
 		object-fit: cover; 
 		object-position: center;
 		display: block;
+		filter: grayscale(100%) brightness(0.7);;
+		transition: filter 0.4s ease;
+	}
+
+	img:hover {
+	filter: grayscale(0%);
 	}
 }
 
