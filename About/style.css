@@ -30,12 +30,6 @@ h1{
 		object-fit: cover; 
 		object-position: center;
 		display: block;
-		filter: grayscale(100%) brightness(0.8);
-		transition: filter 0.4s ease;
-	}
-
-	img:hover {
-	filter: grayscale(0%);
 	}
 }
 
@@ -64,6 +58,10 @@ h1{
 	}
 
 	#headshot-blue-2{
+		grid-column: span 2;
+	}
+
+	#headshot-blue{
 		grid-column: span 2;
 	}
 
