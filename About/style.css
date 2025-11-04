@@ -30,7 +30,7 @@ h1{
 		object-fit: cover; 
 		object-position: center;
 		display: block;
-		filter: grayscale(100%) brightness(0.7);;
+		filter: grayscale(100%) brightness(0.8);
 		transition: filter 0.4s ease;
 	}
 
