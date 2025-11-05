@@ -50,18 +50,6 @@ p{
 	max-width: 65ch;
 }
 
-	/* Lazy Load */
-
-.body-content {
-	opacity: 0;
-	transform: translateY(20px);
-	transition: all 0.5s ease;
-}
-.body-content.loaded {
-	opacity: 1;
-	transform: translateY(0);
-}
-
 	/* Mini Nav */
 
 .mini-nav{
