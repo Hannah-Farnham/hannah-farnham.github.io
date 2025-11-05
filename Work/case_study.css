@@ -217,7 +217,7 @@ p{
 	.snippet{
 		display: flex;
 		flex-direction: column;
-		gap: 8px;
+		gap: var(--size-0);
 	}
 }
 
@@ -551,10 +551,19 @@ p{
 }
 
 @media (min-width: 1200px) {
+
 	.mini-nav{
 		ul{
 			gap: var(--size-3);
 		}
+	}
+}
+
+@media (min-width: 1380px) {
+	#intro-section, #problem-section{
+		padding: 280px;
+		padding-top: var(--size-6);
+		padding-bottom: var(--size-8);
 	}
 }
 
