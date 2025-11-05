@@ -63,6 +63,7 @@ p{
 	border-radius: var(--size-1);
 	margin-bottom: 8px;
 	transition: all 0.5s ease;
+	z-index: 1000;  
 	ul{
 		display: flex;
 		flex-direction: row;
@@ -189,6 +190,17 @@ p{
 		font-family: var(--font-3);
 		margin-bottom: 8px;
 	}
+}
+
+.case-study-section, .image-section, .two-image{
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.case-study-section.visible, .image-section.visible, .two-image.visible {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .case-study-image{

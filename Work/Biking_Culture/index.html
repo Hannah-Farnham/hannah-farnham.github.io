@@ -374,6 +374,23 @@
 						<img src="Images/Final_Images.png" alt="User">
 					</div>
 				</section>
+
+				<script>
+					// subtle load of the blocks
+					const blocks = document.querySelectorAll(
+						".case-study-section, .image-section, .two-image"
+					);
+
+					const observer = new IntersectionObserver((entries) => {
+						entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add("visible");
+						}
+						});
+					}, { threshold: 0.2 });
+
+					blocks.forEach((block) => observer.observe(block));
+				</script>
 				
 				<footer>
 				<div class="bottom-row">

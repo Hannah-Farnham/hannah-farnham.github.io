@@ -471,17 +471,20 @@
 				</section>
 
 				<script>
-					// suble load of the blocks
-					const blocks = document.querySelectorAll(".case-study-section");
-					const observer = new IntersectionObserver((entries) => {
-					entries.forEach(entry => {
-						if (entry.isIntersecting) {
-						entry.target.classList.add("visible");
-						}
-					});
-					}, { threshold: 0.2 });
+				// subtle load of the blocks
+				const blocks = document.querySelectorAll(
+					".case-study-section, .image-section, .two-image"
+				);
 
-					blocks.forEach(block => observer.observe(block));
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("visible");
+					}
+					});
+				}, { threshold: 0.2 });
+
+				blocks.forEach((block) => observer.observe(block));
 				</script>
 				
 				<footer>
