@@ -469,6 +469,19 @@
 						</video>
 					</div>
 				</section>
+
+				<script>
+					const sections = document.querySelectorAll('.body-content');
+					const sectionObserver = new IntersectionObserver(entries => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+						entry.target.classList.add('loaded');
+						sectionObserver.unobserve(entry.target);
+						}
+					});
+					});
+					sections.forEach(section => sectionObserver.observe(section));
+				</script>
 				
 				<footer>
 				<div class="bottom-row">
