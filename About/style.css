@@ -53,20 +53,20 @@ h1{
 	}
 
 	#headshot-images{
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(6, auto);
 		grid-template-rows: repeat(2, 400px);
 	}
 
 	#headshot-blue-2{
-		grid-column: span 2;
+		grid-column: span 3;
 	}
 
-	#headshot-blue{
+	#headshot-blue, #headshot-green, #headshot-orange{
 		grid-column: span 2;
 	}
 
 	#headshot-pink{
-		grid-column: span 2;
+		grid-column: span 3;
 	}
 
 	#header-body{
