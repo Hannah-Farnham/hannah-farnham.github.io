@@ -359,6 +359,21 @@
 					End of portfolio. Beginning of a beautiful friendship?
 				</h1>
 			</footer>
+
+			<script>
+				window.addEventListener("load", function() {
+					const loader = document.getElementById("loader");
+					const content = document.getElementById("content");
+
+					// Fade out loader
+					loader.style.opacity = "0";
+
+					setTimeout(() => {
+					loader.style.display = "none";
+					content.style.display = "block";
+					}, 500); // matches CSS transition duration
+				});
+			</script>
 		</section>
 	</body>
 </html>
