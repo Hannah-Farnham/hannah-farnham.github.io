@@ -34,6 +34,7 @@ header{
 		font-size: var(--size-3);
 		width: 70vw;
 	}
+	align-items: flex-end
 }
 
 	/* Fonts */
@@ -151,7 +152,7 @@ p{
 	justify-content: center;
 	align-items: center;
 	border-radius: var(--size-1);
-	height: 80vh;
+	height: 30vh;
 	margin-bottom: 8px;
 	img{
 		object-fit: cover;
@@ -166,6 +167,11 @@ p{
 		height: 103%;
 		margin: 0;	
 	}
+}
+
+.image-section-padding{
+	padding: var(--size-2);
+	background-color: var(--color-light);
 }
 
 	/* Page Layout */
@@ -559,6 +565,13 @@ p{
 
 	.wide-image{
 		padding: var(--size-3);
+	}
+
+	.image-section-padding{
+		padding: var(--size-6);
+		video{
+			height: 80%;
+		}
 	}
 }
 
