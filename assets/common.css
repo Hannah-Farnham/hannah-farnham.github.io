@@ -170,6 +170,12 @@ header{
 	height: 500px;
 }
 
+.header-text{
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-0);
+}
+
 #logo-animation{
 	flex: 1;
 	position: relative;
@@ -389,13 +395,16 @@ footer{
 	border-radius: var(--size-1);
 	flex-direction: column;
 	justify-content: space-between;
-	height: 97vh;
+	height: 80vh;
 	transition: 1s ease-in-out;
 	z-index: 4;
+	padding-bottom: var(--size-3);
 	h1{
 		font-size: 60px;
 	}
-		.bottom-row{
+		.footer-row{
+			display: flex;
+			gap: var(--size-2);
 			a{
 				font-family: var(--font-2);
 				text-decoration: underline;
@@ -417,6 +426,20 @@ footer:hover{
 	a, h1, p{
 		color: white;
 	}
+}
+
+.footer-top{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-2);
+}
+
+.footer-bottom{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-3)
 }
 
 @media (min-width: 768px) {
@@ -447,9 +470,17 @@ footer:hover{
 
 	header{
 		padding: var(--size-1);
-		padding-left: 40px;
-		padding-bottom: var(--size-2);
+		padding-left: var(--size-3);
+		padding-right: var(--size-3);
+		padding-bottom: var(--size-3);
 		height: 700px;
+	}
+
+	.header-text{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items:end;
 	}
 
 	body{
@@ -515,22 +546,26 @@ footer:hover{
 
 	footer{
 		gap: var(--size-2);
-		padding-top: var(--size-3);
-		padding-bottom: var(--size-3);
+		padding: var(--size-3);
 		align-items: center;
 		z-index: 4;
 		h1{
-			font-size: var(--size-4);
-			text-align: center;
+			font-size: 7vw;
 		}
 	}
 
 	.footer-text{
-		max-width: 400px;
-		text-align: center;
+		max-width: 380px;
 	}
 
-	.bottom-row{
+	.footer-top{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+}
+
+	.footer-row{
 		display: flex;
 		flex-direction: row;
 		gap: var(--size-4);
@@ -584,6 +619,12 @@ footer:hover{
 		.portfolio-blocks{
 			max-width: none;
 			min-width: none;
+		}
+	}
+
+	footer{
+		h1{
+			font-size: 8vw;
 		}
 	}
 }
