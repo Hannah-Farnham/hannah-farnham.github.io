@@ -27,6 +27,23 @@ header{
 	}
 }
 
+.mobile-logo{
+	display: block;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	z-index: 9999;
+
+	width: 32px;
+	height: auto;
+
+	animation: floatIn 0.3s ease-out;
+}
+
+@keyframes floatIn {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); }
+}
 
 .header-long-title{
 	gap: 8px;
@@ -455,12 +472,16 @@ p{
 		}
 	}
 
+	.mobile-logo{
+		display: none;
+	}
+
 	.header-long-title{
 	gap: 8px;
-	h1{
-		font-size: var(--size-5);
-		width: 75vw;
-	}
+		h1{
+			font-size: var(--size-5);
+			width: 75vw;
+		}
 }
 
 	.case-study-section{
