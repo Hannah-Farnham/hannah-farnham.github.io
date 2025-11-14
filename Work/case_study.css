@@ -588,9 +588,15 @@ p{
 	}
 
 	.image-section-padding{
-		padding: var(--size-6);
+		padding: var(--size-4);
 		video{
 			height: 80%;
+		}
+		img{
+			height: 100%;
+			width: 100%;
+			object-position: center;
+			display: block;
 		}
 	}
 
@@ -652,4 +658,8 @@ p{
 		height: 300px;
 	}
 }
+
+	.image-section-padding{
+		padding: var(--size-6);
+	}
 }
