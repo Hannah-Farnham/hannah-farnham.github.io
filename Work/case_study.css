@@ -30,8 +30,8 @@ header{
 .mobile-logo{
 	display: block;
 	position: fixed;
-	bottom: 16px;
-	right: 16px;
+	bottom: 24px;
+	right: 24px;
 	z-index: 9999;
 
 	width: 32px;
@@ -256,23 +256,12 @@ p{
 	}
 }
 
-#problem-section, #research-section{
+#problem-section{
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-2);
 	img{
 		border-radius: 16px;
-	}
-}
-
-#research-section{
-	p{
-		font-size: 16px;
-		max-width: 250px;
-	}
-	#large-size-body{
-		font-size: 20px;
-		max-width: 65ch;
 	}
 }
 
@@ -298,11 +287,24 @@ p{
 
 /* User Interviews */
 
-.users{
-	display: flex;
-	flex-direction: column;
-	gap: var(--size-3);
-	flex-wrap: wrap;
+#research-section{
+	p{
+		font-size: 16px;
+		max-width: 250px;
+	}
+	#large-size-body{
+		font-size: 20px;
+		max-width: 65ch;
+	}
+}
+
+.case-study-section .users {
+	display: grid !important;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--size-2);
+	img{
+		height: 140px;
+	}
 }
 
 .one-user{
@@ -311,6 +313,7 @@ p{
 	flex-direction: column;
 	gap: var(--size-1);
 	img{
+		border-radius: 8px;
 		width: 300px;
 		height: 300px;
 		object-fit: cover;
@@ -477,12 +480,12 @@ p{
 	}
 
 	.header-long-title{
-	gap: 8px;
-		h1{
-			font-size: var(--size-5);
-			width: 75vw;
-		}
-}
+		gap: 8px;
+			h1{
+				font-size: var(--size-5);
+				width: 75vw;
+			}
+	}
 
 	.case-study-section{
 		padding: var(--size-3);
@@ -540,10 +543,6 @@ p{
 		gap: var(--size-5);
 	}
 
-	.users{
-		flex-direction: row;
-	}
-
 	.sketches{
 		flex-direction: row;
 	}
@@ -594,6 +593,15 @@ p{
 			height: 80%;
 		}
 	}
+
+	.case-study-section .users {
+	display: grid !important;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: var(--size-2);
+	img{
+		height: 250px;
+	}
+}
 }
 
 @media (min-width: 1200px) {
