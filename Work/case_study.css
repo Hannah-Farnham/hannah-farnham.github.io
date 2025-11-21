@@ -290,11 +290,11 @@ p{
 #research-section{
 	p{
 		font-size: 16px;
-		max-width: 250px;
+		max-width: 265px;
 	}
 	#large-size-body{
 		font-size: 20px;
-		max-width: 65ch;
+		max-width: 55ch;
 	}
 }
 
@@ -508,7 +508,7 @@ p{
 		background-color: var(--color-light);
 		display: flex;
 		flex-direction: row;
-		gap: var(--size-10);
+		gap: var(--size-8);
 	}
 
 	/* Low-Fidelity Section */
@@ -601,12 +601,12 @@ p{
 	}
 
 	.case-study-section .users {
-	display: grid !important;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: var(--size-2);
-	img{
-		height: 250px;
-	}
+		display: grid !important;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: var(--size-2);
+		img{
+			height: 250px;
+		}
 }
 }
 
@@ -638,7 +638,7 @@ p{
 
 @media (min-width: 1380px) {
 	#intro-section, #problem-section{
-		padding: 280px;
+		padding: 250px;
 		padding-top: var(--size-6);
 		padding-bottom: var(--size-8);
 	}
