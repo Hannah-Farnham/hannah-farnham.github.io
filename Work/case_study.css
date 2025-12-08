@@ -292,22 +292,43 @@ p{
 /* User Interviews */
 
 #research-section{
-	p{
-		font-size: 16px;
-	}
 	#large-size-body{
 		font-size: 20px;
 		max-width: 55ch;
 	}
+	gap: var(--size-2);
 }
 
 .case-study-section .users {
 	display: grid !important;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: repeat(1, minmax(0, 1fr));
 	gap: var(--size-2);
-	img{
-		height: 140px;
+	.information-spacing{
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-0);
 	}
+	.user-information{
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-0);
+		h4{
+			padding-bottom: 0px;
+		}
+	}
+	img{
+		height: 240px;
+		width: 240px;
+	}
+}
+
+.user-quote{
+	font-size: 20px;
+	line-height: 1.9ch;
+	font-weight: 100;
+	font-family: var(--font-3);
+	font-style: italic;
+	text-wrap: pretty;
 }
 
 .one-user{
@@ -605,10 +626,11 @@ p{
 
 	.case-study-section .users {
 		display: grid !important;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-		gap: var(--size-2);
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--size-4);
 		img{
 			height: 250px;
+			width: 250px;
 		}
 }
 }
@@ -623,15 +645,45 @@ p{
 
 	.users{
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: var(--size-1);
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--size-4);
 	}
 
 	.one-user{
-		img{
-			width: 250;
-			height: 250;
-		}
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		justify-content: end;
+		align-items: end;
+		gap: var(--size-2);
+	}
+
+	.user-information{
+		grid-column: span 5;
+	}
+
+	.user-quote{
+		font-size: 24px;
+		line-height: 1.9ch;
+		font-weight: 100;
+		font-family: var(--font-3);
+		font-style: italic;
+		text-wrap: pretty;
+	}
+
+	hr {
+		border: none;
+		border-top: 2px solid var(--color-light-grey);
+		margin: 24px 0;
+		margin-bottom: 0px;
+	}
+
+	.information-spacing{
+		grid-column: span 7;
+	}
+
+	.one-user img{
+		width: 250px;
+		height: 250px;
 	}
 
 	.user-title{
