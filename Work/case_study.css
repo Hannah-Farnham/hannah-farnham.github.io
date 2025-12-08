@@ -265,6 +265,10 @@ p{
 	}
 }
 
+#problem-paragraph{
+	max-width: 350px;
+}
+
 .bullet-point{
 	display: flex;
 	margin-top: var(--size-0);
