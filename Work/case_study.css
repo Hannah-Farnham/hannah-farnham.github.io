@@ -503,6 +503,11 @@ p{
 	gap: var(--size-2);
 }
 
+#branding-animation{
+	border-radius: var(--size-3);
+	overflow: hidden;
+}
+
 /* Branding */
 #branding-section{
 
