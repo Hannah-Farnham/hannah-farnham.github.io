@@ -202,7 +202,7 @@ p{
 	margin-bottom: 8px;
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-1);
+	gap: var(--size-2);
 	ul {
 		list-style-type: disc;
 		padding-left: var(--size-1); 
@@ -459,6 +459,26 @@ p{
 	}
 }
 
+/* Key-features */
+
+.phone-image{
+	border: 10px black solid;
+	border-radius: 32px;
+}
+
+.phone-image img{
+	max-height: 650px;
+	object-fit: contain; 
+	object-position: center;
+	display: block;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.phone-text{
+	max-width: 350px;
+}
+
 /* High-fidelity */
 
 .figma-embed{
@@ -555,6 +575,7 @@ p{
 		flex-direction: row;
 		gap: var(--size-3);
 		align-items: center;
+		justify-content: center;
 	}
 
 	#full-width-image{
@@ -566,6 +587,15 @@ p{
 		flex-direction: row;
 		gap: 8px;
 		margin-bottom: 8px;
+	}
+
+	/* Page Layout */
+
+	.phone-line{
+		width: 80px;
+		border: none;
+		border-top: 1px solid var(--color-light-grey);
+		margin: var(--size-2) 0;
 	}
 
 	/* Page Layout */
