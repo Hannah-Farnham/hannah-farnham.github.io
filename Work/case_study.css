@@ -720,6 +720,9 @@ p{
 		border: none;
 		border-top: 1px solid var(--color-light-grey);
 		margin: 24px 0;
+	}
+
+	.line-quote{
 		margin-bottom: 0px;
 	}
 
