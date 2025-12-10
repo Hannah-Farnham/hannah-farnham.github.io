@@ -538,6 +538,12 @@ p{
 	}
 }
 
+.feature-block-image{
+	max-width: 900px;
+	justify-content: start;
+	align-items: flex-start;
+}
+
 #map-image{
 	background-color: white;
 	border-radius: 16px;
