@@ -44,7 +44,7 @@
 	--font-1: "forma-djr-display", sans-serif;
 	--font-2: "forma-djr-mono", sans-serif;
 	--font-3: "forma-djr-text", sans-serif;
-	--font-4: "sutro", serif;
+	--font-4: "forma-djr-deck", sans-serif;
 }
 
 html {
@@ -82,11 +82,13 @@ h1{
 }
 
 h2{
+	font-family: var(--font-4);
 	font-size: var(--size-2);
-	font-weight: 900;
+	font-weight: 700;
 }
 
 h3{
+	font-family: var(--font-3);
 	font-size: var(--size-1);
 	font-weight: 600;
 	color: var(--color-dark);
