@@ -426,13 +426,6 @@ footer{
 		}
 	}
 
-footer:hover{
-	background-color: var(--color-dark);
-	a, h1, p{
-		color: white;
-	}
-}
-
 .footer-top{
 	width: 100%;
 	display: flex;

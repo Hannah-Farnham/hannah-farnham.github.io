@@ -160,7 +160,6 @@ p{
 		margin: 0;
 	}
 }
-
 	/* Intro Section */
 	
 #full-width-image{
@@ -215,7 +214,7 @@ p{
 	}
 }
 
-.case-study-section, .image-section, .two-image{
+.case-study-section, .image-section, .two-image {
 	opacity: 0;
 	transform: translateY(40px);
 	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -710,7 +709,7 @@ p{
 		height: 100vh;
 	}
 
-	.two-image{
+	.two-image {
 		display: flex;
 		flex-direction: row;
 		gap: 8px;
