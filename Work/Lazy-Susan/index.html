@@ -1,0 +1,190 @@
+<html>
+	<head>
+
+		<title>
+			Hannah Farnham - Portfolio
+		</title>
+
+		<!-- Necessary Links -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="/assets/reset.css" rel="stylesheet">
+		<link href="/assets/common.css" rel="stylesheet">
+		<link href="/Work/case_study.css" rel="stylesheet">
+		<script src="basic.js" defer></script>
+
+		<!-- Favicon Link -->
+		<link href="../../assets/favicon.ico" rel="icon" sizes="any">
+
+		<!-- Font Links -->
+		<link rel="stylesheet" href="https://use.typekit.net/iwu3uep.css">
+
+	</head>
+
+	<body>
+		<nav>
+			<div class="nav-logo">
+				<a href="/index.html">
+					<img src="/Logo/Logo-2.png" alt="Logo Image"> 
+				</a>
+			</div>
+			<div class="mobile-logo">
+				<a href="/index.html">
+					<img src="/Logo/Logo-2.png" alt="Logo Image"> 
+				</a>
+			</div>
+			<div class="nav-item"  id="page-highlight">
+				<a href="/index.html">
+					Work
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="/Playground/">
+					Playground
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="/Coding/">
+					Coding
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="/About">
+					About
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="/Resume/Hannah_Farnham_Resume.pdf" target="_blank" rel="noopener noreferrer">
+					Resume
+				</a>
+			</div>
+		</nav>
+
+		<section class="body-content">
+			<header>
+				<h1>
+					Lazy Susan Sundays
+				</h1>
+				<div>
+						<h4>
+							Timeline
+						</h4>
+						<p>
+							February, 2026 (1 month)
+						</p>
+					</div>
+			</header>
+
+			<section class="image-section">
+			</section>
+
+			<section class="two-image">
+					<div id="third-width-image">
+					<video autoplay loop muted playsinline>
+							<source src="Images/Susan, AfterEffects_3.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+					</video>
+				</div>
+					<div id="half-width-image">
+						<img src="Images/Pattern-yellow.png" alt="User">
+					</div>
+			</section>
+
+			<section class="case-study-section" id="intro-section">
+				<div class="case-study-info">
+					<div>
+						<div class="snippet">
+							<h2>
+								Workplace
+							</h2>
+							<p>
+								Freelance
+							</p>
+						</div>
+						<div class="snippet">
+							<h2>
+								Project Type
+							</h2>
+							<p>
+								Branding / Graphic Design
+							</p>
+						</div>
+					</div>
+					<div >
+						<div class="snippet">
+							<h2>
+								Overview
+							</h2>
+							<p>
+								<em>This is an ongoing project, but wanted to give a little preview!</em> 
+								<br>
+								<br>
+								I am working with chef, Matt Yee on the identity for his dinner series, Lazy Susan Sundays. Matt cooks farm-to-table food, and experiments with asian flavors. While traveling in Thailand, Matt was inspired by the textile patterns. Using his images for reference, I hand-drew custom patterns for use in this project. I created this character, "Lazy Susan," to embody the feeling of a lazy sunday, where you want to lay around and be fed good food.
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="two-image">
+					<div id="half-width-image">
+						<img src="Images/IMG_4024 1.png" alt="User">
+					</div>
+					<div id="half-width-image">
+						<img src="Images/IMG_4025 1.png" alt="User">
+					</div>
+					<div id="half-width-image">
+						<img src="Images/IMG_4028 1.png" alt="User">
+					</div>
+			</section>
+
+				<script>
+					// subtle load of the blocks
+					const blocks = document.querySelectorAll(
+						".case-study-section, .image-section, .two-image"
+					);
+
+					const observer = new IntersectionObserver((entries) => {
+						entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add("visible");
+						}
+						});
+					}, { threshold: 0.2 });
+
+					blocks.forEach((block) => observer.observe(block));
+				</script>
+				
+			<footer>
+				<div class="footer-top">
+					<div class="footer-text">
+						<p>
+							I design things, make art, and write code that sometimes works. Whether I'm painting, prototyping, coding, or brainstorming, I love the feeling of chasing an idea until it works.
+						</p>
+					</div>
+					<div class="footer-row">
+						<a href="mailto:hfarnham.design@gmail.com">
+							Email
+						</a>
+						<a href="https://www.linkedin.com/in/hannah-farnham-69b58518b/">
+							Linkedin
+						</a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<h1>
+						Thanks for stopping by 
+					</h1>
+					<div class="footer-row">
+						<p>
+							Designed & Coded by Hannah Farnham
+						</p>
+						<p>
+							© 2025 Hannah Farnham
+						</p>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</body>
+</html>
