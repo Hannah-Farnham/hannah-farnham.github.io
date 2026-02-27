@@ -44,15 +44,6 @@ header{
 	to { opacity: 1; transform: translateY(0); }
 }
 
-.header-long-title{
-	gap: 8px;
-	h1{
-		font-size: var(--size-3);
-		width: 70vw;
-	}
-	align-items: flex-end
-}
-
 	/* Fonts */
 
 h2{

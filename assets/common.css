@@ -249,7 +249,7 @@ header{
 
 .portfolio-blocks{
 	text-align: center;
-	height: 500px;
+	height: 400px;
 	background-color: var(--color-light);
 	border-radius: 12px;
 	position: relative;
@@ -550,6 +550,10 @@ footer{
 	
 	.inline-links{
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.portfolio-blocks{
+		height: 500px;
 	}
 
 	footer{
