@@ -55,7 +55,7 @@ h4{
 }
 
 p{
-	max-width: 65ch;
+	max-width: 50ch;
 }
 
 	/* Mini Nav */
@@ -63,55 +63,51 @@ p{
 .mini-nav{
 	padding: var(--size-2);
 	background-color: var(--color-light);
-	position: sticky;
-	top: 0px;
 	overflow: hidden;
 	overflow-x: auto;
 	scrollbar-width: none;
 	border-radius: var(--size-1);
 	margin-bottom: 8px;
-	transition: all 0.5s ease;
+	transition: background-color 0.35s ease, border-radius 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
 	z-index: 1000;  
 	ul{
 		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
 		gap: var(--size-1);
-		transition: justify-content 1.2s ease-in-out, transform 1.2s ease-in-out;
+	}
+	li{
+		display: block;
 	}
 	a{
 		color: var(--color-dark);
 		font-family: var(--font-2);
 		font-size: 12px;
 		text-wrap: nowrap;
-		opacity: 25%;
+		opacity: 50%;
+		text-transform: uppercase;
 	}
 }
 
-#last-item{
+.mini-nav.scrolled {
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	background: rgba(255, 255, 255, 0.3); 
+	border: 1px solid var(--color-light-grey);
+	padding: 16px;
+	position: fixed;
+	bottom: 8px;
+	top: auto;
+	left: 8px;
+	right: 8px;
+	#last-item{
 	padding-right: 24px;
 }
-
-	.mini-nav.scrolled {
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		background: rgba(255, 255, 255, 0.3); 
-		border: 1px solid var(--color-light-grey);
-		transition: all 0.3s ease;
-		padding: 16px;
-		border-radius: 0px 0px 8px 8px;
-	}
+}
 
 .mini-nav a:hover{
-	opacity: 50%;
+	opacity: 90%;
 }
 
 .mini-nav a:active{
-	opacity: 100%;
-}
-
-.mini-nav a.active {
 	opacity: 100%;
 }
 
@@ -180,9 +176,9 @@ p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: var(--size-1);
+	border-radius: 16px;
 	height: 50vh;
-	margin-bottom: 8px;
+	margin: 8px;	
 	img{
 		object-fit: cover;
 		overflow: hidden;
@@ -246,6 +242,7 @@ p{
 		color: var(--color-dark);
 		font-size: 16px;
 		font-family: var(--font-3);
+		font-weight: 300;
 		margin-bottom: 8px;
 	}
 }
@@ -279,6 +276,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-3);
+	justify-content: center;
 	div{
 		display: flex;
 		flex-direction: column;
@@ -298,6 +296,10 @@ p{
 	img{
 		border-radius: 16px;
 	}
+}
+
+.problem-paragraph{
+	max-width: 400px;
 }
 
 #problem-paragraph{
@@ -493,13 +495,10 @@ p{
 /* Quote */
 
 #quote-section{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: var(--size-2);
 	h1{
-		max-width: 35ch;
-		font-size: 4vw;
-		text-align: center;
+		max-width: 36ch;
+		font-size: 8vw;
 		font-family: var(--font-3);
 		font-weight: 100;
 	}
@@ -661,7 +660,8 @@ p{
 @media (min-width: 768px) {
 
 	header{
-	padding: var(--size-3);
+	padding-left: var(--size-6);
+	padding-right: var(--size-6);
 	display: flex;
 	flex-direction: row;
 	gap: var(--size-2);
@@ -687,9 +687,38 @@ p{
 			}
 	}
 
+	.mini-nav{
+		top: 8px;
+		transition: opacity 0.35s ease, background-color 0.35s ease;
+		will-change: transform;
+		display: flex;
+		justify-content: center;
+		a{
+			font-size: 14px;
+		}
+		ul{
+			gap: var(--size-1);
+			width: fit-content;
+		}
+	}
+
+	.mini-nav.scrolled {
+		width: fit-content;
+
+		left: 50%;
+		transform: translateX(-50%);
+		display: block;
+
+		padding: 24px 32px;
+		border-radius: 16px;
+
+		#last-item{
+		padding-right: 0px;
+	}
+	}
+
 	.case-study-section{
 		padding: var(--size-4);
-		padding-bottom: var(--size-6);
 		li{
 			font-size: 20px;
 		}
@@ -789,14 +818,14 @@ p{
 	.feature-block{
 		display: flex;
 		flex-direction: row;
-		gap: var(--size-2);
+		gap: var(--size-4);
 		align-items: center;
 		justify-content: center;
 		width: 100%;
 	}
 
 	#full-width-image{
-		height: 100vh;
+		height: 110vh;
 	}
 
 	#mobile-height-image{	
@@ -807,7 +836,7 @@ p{
 		display: flex;
 		flex-direction: row;
 		gap: 8px;
-		margin-bottom: 8px;
+		margin: 8px;
 	}
 
 	/* Features */
@@ -840,37 +869,6 @@ p{
 		padding-top: 24px;
 	}
 
-	.mini-nav{
-		padding-left: var(--size-3);
-		top: 8px;
-		a{
-			font-size: 14px;
-		}
-		ul{
-			gap: var(--size-1);
-		}
-	}
-
-	.mini-nav.scrolled {
-		margin-right: 8px;
-		margin-left: 8px;
-		padding: 24px;
-		padding-left: 32px;
-		padding-right: 32px;
-		transition: all 0.5s ease;
-		width: auto;
-		display: inline-block;
-		border-radius: 0px 0px 20px 20px;
-		ul{
-			justify-content: center;
-			gap: var(--size-1);
-		}
-	}
-
-	#last-item{
-		padding-right: 0px;
-	}
-
 	.wide-image{
 		padding: var(--size-3);
 	}
@@ -893,13 +891,14 @@ p{
 			height: 250px;
 			width: 250px;
 		}
-}
+	}
 }
 
 @media (min-width: 1200px) {
 
 	.case-study-section{
-		padding: var(--size-5);
+		padding-top: 200px;
+		padding-bottom: 200px
 	}
 
 	.mini-nav{
@@ -917,16 +916,16 @@ p{
 	.user-quote{
 		font-size: 24px;
 	}
-}
 
-@media (min-width: 1380px) {
-	#intro-section, #problem-section{
-		padding: 250px;
-		padding-top: var(--size-6);
-		padding-bottom: var(--size-8);
+
+#quote-section{
+	padding: 250px;
+	h1{
+		font-size: 8vw;
 	}
 }
 
+}
 @media (min-width: 1500px) {
 
 /* User Interviews */

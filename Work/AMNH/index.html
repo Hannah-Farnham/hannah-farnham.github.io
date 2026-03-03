@@ -21,43 +21,39 @@
 	</head>
 
 	<body>
-		<nav>
+		<nav class="main-nav">
+
 			<div class="nav-logo">
-				<a href="/index.html">
-					<img src="/Logo/Logo-2.png" alt="Logo Image"> 
+				<a href="/index.html" class="nav-logo" aria-label="Go to Work page">
+					<svg class="logo-mark" viewBox="0 0 100 100" role="img">
+						<circle cx="50" cy="50" r="45" fill="#EAC2D6" />
+					</svg>
 				</a>
 			</div>
-			<div class="mobile-logo">
-				<a href="/index.html">
-					<img src="/Logo/Logo-2.png" alt="Logo Image"> 
-				</a>
-			</div>
-			<div class="nav-item"  id="page-highlight">
-				<a href="/index.html">
-					Work
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="/Playground/">
-					Playground
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="/Coding/">
-					Coding
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="/About">
-					About
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="/Resume/Hannah_Farnham_Resume.pdf" target="_blank" rel="noopener noreferrer">
-					Resume
-				</a>
-			</div>
+
+			<button class="menu-button" id="menuButton">
+				Menu
+			</button>
+			
 		</nav>
+
+		<div class="menu-overlay" id="menuOverlay">
+
+			<button class="close-button" id="closeButton">
+				Close
+			</button>
+
+			<nav class="menu-links">
+				<a href="/index.html">Work</a>
+				<a href="/Playground/">Playground</a>
+				<a href="/Coding/">Coding</a>
+				<div class="small-links">
+					<a href="/About">About</a>
+					<a href="/Resume/Hannah_Farnham_Resume.pdf" target="_blank">Resume</a>
+				</div>
+			</nav>
+
+		</div>
 
 		<section class="body-content">
 			<header class="header-long-title">
@@ -93,8 +89,8 @@
 				});
 			</script>
 
-			<section class="image-section">
-				<div id="mobile-height-image">
+			<section class="image-section" id="full-width-image">
+				<div>
 					<video autoplay loop muted playsinline>
 							<source src="Images/Video.mp4" type="video/mp4">
 							Your browser does not support the video tag.
@@ -156,12 +152,6 @@
 				<div id="full-width-image">
 					<img src="Images/Images_Exhibits.png" alt="User">
 				</div>
-			</section>
-
-			<section class="case-study-section" id="quote-section">
-				<h1>
-					More coming soon...
-				</h1>
 			</section>
 
 			<!-- <section class="image-section">
@@ -319,11 +309,6 @@
 				
 			<footer>
 				<div class="footer-top">
-					<div class="footer-text">
-						<p>
-							I design things, make art, and write code that sometimes works. Whether I'm painting, prototyping, coding, or brainstorming, I love the feeling of chasing an idea until it works.
-						</p>
-					</div>
 					<div class="footer-row">
 						<a href="mailto:hfarnham.design@gmail.com">
 							Email
@@ -332,21 +317,16 @@
 							Linkedin
 						</a>
 					</div>
-				</div>
-				<div class="footer-bottom">
-					<h1>
-						Thanks for stopping by 
-					</h1>
 					<div class="footer-row">
 						<p>
-							Designed & Coded by Hannah Farnham
+							Designed & Coded by Hannah
 						</p>
 						<p>
-							© 2025 Hannah Farnham
+							© 2025 
 						</p>
 					</div>
-				</div>
 			</footer>
+			
 		</section>
 	</body>
 </html>

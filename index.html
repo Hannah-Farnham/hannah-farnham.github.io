@@ -31,37 +31,42 @@
 		<link rel="stylesheet" href="https://use.typekit.net/iwu3uep.css">
 
 	</head>
+
+	<div class="cursor"></div>
+
 	<body>
-		<nav>
-			<div class="nav-logo" id="navToggle">
-				<img src="Logo/Logo-2.png" alt="Logo Image"> 
+
+		<nav class="main-nav">
+
+			<div class="nav-logo">
+			<svg class="logo-mark" viewBox="0 0 100 100" aria-label="Hannah Farnham logo" role="img">
+				<circle cx="50" cy="50" r="45" fill="#EAC2D6" />
+			</svg>
 			</div>
-			<div class="nav-item"  id="page-highlight">
-				<a href="index.html">
-					Work
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="Playground/">
-					Playground
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="Coding/">
-					Coding
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="About">
-					About
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="Resume/Hannah_Farnham_Resume.pdf" target="_blank" rel="noopener noreferrer">
-					Resume
-				</a>
-			</div>
+
+			<button class="menu-button" id="menuButton">
+				Menu
+			</button>
+			
 		</nav>
+
+		<div class="menu-overlay" id="menuOverlay">
+
+			<button class="close-button" id="closeButton">
+				Close
+			</button>
+
+			<nav class="menu-links">
+				<a href="index.html">Work</a>
+				<a href="Playground/">Playground</a>
+				<a href="Coding/">Coding</a>
+				<div class="small-links">
+					<a href="About">About</a>
+					<a href="Resume/Hannah_Farnham_Resume.pdf" target="_blank">Resume</a>
+				</div>
+			</nav>
+
+		</div>
 
 		<section class="body-content" id="intro-overlay">
 			<div class="sticky">
@@ -69,9 +74,6 @@
 					<h1>  
 						Nudging thoughts into <em>visual</em> language. 
 					</h1>
-					<section id="logo-animation">
-						<!-- <img src="Work/Cover Images/character.gif" alt="Logo Image">  -->
-					</section>
 					<div class="header-text">
 						<p> Hello, I am Hannah Farnham,
 							<br> 
@@ -94,11 +96,9 @@
 									<img src="Work/Cover Images/Mooli_Grow.gif" alt="Torv Image"> 
 								</div>
 								<div class="portfolio-label">
-									<p>UI/UX</p>
-									<hr class="portfolio-divider">
+									<p class="subtle-label">UI/UX</p>
 									<p>Mooli</p>
-									<hr class="portfolio-divider">
-									<p>2025</p>
+									<p class="subtle-label">2025</p>
 								</div>
 							</a>
 						</li>
@@ -110,11 +110,9 @@
 									<img src="Work/Cover Images/Biking Culture.png" alt="Biking Culture"> 
 								</div>
 								<div class="portfolio-label">
-									<p>Book Design</p>
-									<hr class="portfolio-divider">
-									<p><em>Biking Culture</em></p>
-									<hr class="portfolio-divider">
-									<p>2024</p>
+									<p class="subtle-label">Book Design</p>
+									<p>Biking Culture</p>
+									<p class="subtle-label">2024</p>
 								</div>
 							</a>
 						</li>
@@ -129,11 +127,9 @@
 									</video>
 								</div>
 								<div class="portfolio-label">
-									<p>Branding</p>
-									<hr class="portfolio-divider">
-									<p><em>Lazy Susan</em></p>
-									<hr class="portfolio-divider">
-									<p>2026</p>
+									<p class="subtle-label">Branding</p>
+									<p>Lazy Susan</p>
+									<p class="subtle-label">2026</p>
 								</div>
 							</a>
 						</li>
@@ -145,11 +141,9 @@
 									<img src="Work/Cover Images/Torv.gif" alt="Torv Image"> 
 								</div>
 								<div class="portfolio-label">
-									<p>UI/UX</p>
-									<hr class="portfolio-divider">
+									<p class="subtle-label">UI/UX</p>
 									<p>Torv</p>
-									<hr class="portfolio-divider">
-									<p>2024</p>
+									<p class="subtle-label">2024</p>
 								</div>
 							</a>
 						</li>
@@ -161,11 +155,9 @@
 									<img src="Work/Cover Images/DMD.png" alt="DMD Image"> 
 								</div>
 								<div class="portfolio-label">
-									<p>Game Design</p>
-									<hr class="portfolio-divider">
-									<p><em>DMD</em></p>
-									<hr class="portfolio-divider">
-									<p>2025</p>
+									<p class="subtle-label">Game Design</p>
+									<p>DMD</p>
+									<p class="subtle-label">2025</p>
 								</div>
 							</a>
 						</li>
@@ -177,11 +169,9 @@
 									<img src="Work/Cover Images/M&G.png" alt="M&G Image"> 
 								</div>
 								<div class="portfolio-label">
-									<p>UI/UX</p>
-									<hr class="portfolio-divider">
-									<p><em>Moore & Giles</em></p>
-									<hr class="portfolio-divider">
-									<p>2023</p>
+									<p class="subtle-label">UI/UX</p>
+									<p>Moore & Giles</p>
+									<p class="subtle-label">2023</p>
 								</div>
 							</a>
 						</li>
@@ -193,11 +183,9 @@
 									<img src="Work/Cover Images/ANHM.png" alt="AMNH Image"> 
 								</div>
 								<div class="portfolio-label">
-									<p>Motion Graphics</p>
-									<hr class="portfolio-divider">
-									<p><em>AMNH</em></p>
-									<hr class="portfolio-divider">
-									<p>2025</p>
+									<p class="subtle-label">Motion Graphics</p>
+									<p>AMNH</p>
+									<p class="subtle-label">2025</p>
 								</div>
 							</a>
 						</li>
@@ -209,11 +197,9 @@
 									<img src="Work/Cover Images/Mattyee.jpg" alt="M&G Image"> 
 								</div>
 								<div class="portfolio-label">
-									<p>Graphic Design</p>
-									<hr class="portfolio-divider">
-									<p><em>Queenies</em></p>
-									<hr class="portfolio-divider">
-									<p>2024</p>
+									<p class="subtle-label">Graphic Design</p>
+									<p>Queenies</p>
+									<p class="subtle-label">2024</p>
 								</div>
 							</a>
 						</li>
@@ -224,11 +210,9 @@
 									<img src="Work/Cover Images/Cope.gif" alt="bikes"> 
 								</div>
 								<div class="portfolio-label">
-									<p>Branding</p>
-									<hr class="portfolio-divider">
-									<p><em>Visit Copenhagen</em></p>
-									<hr class="portfolio-divider">
-									<p>2018–24</p>
+									<p class="subtle-label">Branding</p>
+									<p>Visit Copenhagen</p>
+									<p class="subtle-label">2018–24</p>
 								</div>
 							</a>
 						</li>
@@ -239,11 +223,9 @@
 									<img src="Work/Cover Images/Overlook-logo.gif" alt="Overlook Image"> 
 								</div>
 								<div class="portfolio-label">
-									<p>Motion Graphics</p>
-									<hr class="portfolio-divider">
-									<p><em>Overlook</em></p>
-									<hr class="portfolio-divider">
-									<p>2025</p>
+									<p class="subtle-label">Motion Graphics</p>
+									<p>Overlook</p>
+									<p class="subtle-label">2025</p>
 								</div>
 							</a>
 						</li>
@@ -303,19 +285,6 @@
 					header.style.opacity   = fade.toFixed(3);
 					header.style.transform = `translateY(${eased * 40}px) scale(${1 - eased * 0.02})`;
 					header.style.filter    = `blur(${eased * 2}px)`;
-
-					// 2) Hard-hide at the end so it cannot peek between portfolio & footer
-					if (progress >= 0.99) {
-					header.classList.add('gone');
-					// belt-and-suspenders: drop the back layer below the front
-					scene.querySelector('.panel--back')?.style.setProperty('z-index', '-1');
-					} else {
-					header.classList.remove('gone');
-					scene.querySelector('.panel--back')?.style.removeProperty('z-index');
-					}
-
-					// keep your existing front panel transform if you use it elsewhere
-					// e.g., document.documentElement.style.setProperty('--progress', progress.toFixed(4));
 				}
 
 				function clamp(n, min, max) { return Math.max(min, Math.min(n, max)); }
@@ -325,11 +294,6 @@
 
 			<footer>
 				<div class="footer-top">
-					<div class="footer-text">
-						<p>
-							I design things, make art, and write code that sometimes works. Whether I'm painting, prototyping, coding, or brainstorming, I love the feeling of chasing an idea until it works.
-						</p>
-					</div>
 					<div class="footer-row">
 						<a href="mailto:hfarnham.design@gmail.com">
 							Email
@@ -338,28 +302,23 @@
 							Linkedin
 						</a>
 					</div>
-				</div>
-				<div class="footer-bottom">
-					<h1>
-						Thanks for stopping by 
-					</h1>
 					<div class="footer-row">
 						<p>
-							Designed & Coded by Hannah Farnham
+							Designed & Coded by Hannah
 						</p>
 						<p>
-							© 2025 Hannah Farnham
+							© 2025 
 						</p>
 					</div>
-				</div>
 			</footer>
 
+			<!-- PAGE LOADER FADE - Not sure if this works -->
 			<script>
 			window.addEventListener("load", () => {
 				const loader = document.getElementById("loader");
 				const content = document.getElementById("content");
 
-				if (!loader || !content) return; // prevents crash if they don’t exist
+				if (!loader || !content) return;
 
 				loader.style.opacity = "0";
 
@@ -367,6 +326,30 @@
 				loader.style.display = "none";
 				content.style.display = "block";
 				}, 500);
+			});
+			</script>
+
+			<!-- MENU ANIMATION -->
+			<script> 
+			const menuButton = document.getElementById('menuButton');
+			const menuOverlay = document.getElementById('menuOverlay');
+			const closeButton = document.getElementById('closeButton');
+
+			menuButton.addEventListener('click', () => {
+				menuOverlay.classList.add('active');
+				document.body.classList.add('menu-open');
+			});
+
+			closeButton.addEventListener('click', () => {
+				menuOverlay.classList.remove('active');
+				document.body.classList.remove('menu-open');
+			});
+
+			document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				menuOverlay.classList.remove('active');
+				document.body.classList.remove('menu-open');
+			}
 			});
 			</script>
 

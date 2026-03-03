@@ -22,8 +22,8 @@ header{
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	background-color: var(--color-light);
-	padding: var(--size-0);
-	gap: var(--size-0);
+	padding: 8px;
+	gap: 8px;
 	border-radius: 16px;
 	margin-bottom: 8px;
 	img{
@@ -40,6 +40,14 @@ header{
 	border-radius: 8px;
 	max-height: 200px;
 	width: auto;
+}
+
+#headshot-orange{
+	transition: transform 0.3s ease;
+}
+
+#headshot-orange:hover{
+	transform: rotate(4deg); 
 }
 
 #header-body{

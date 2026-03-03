@@ -20,37 +20,41 @@
 	
 	</head>
 	<body>
-		<nav>
+		
+		<nav class="main-nav">
+
 			<div class="nav-logo">
-				<a href="../index.html">
-					<img src="/Logo/Logo-2.png" alt="Logo Image"> 
-				</a>			</div>
-			<div class="nav-item">
-				<a href="../index.html">
-					Work
+				<a href="/index.html" class="nav-logo" aria-label="Go to Work page">
+					<svg class="logo-mark" viewBox="0 0 100 100" role="img">
+						<circle cx="50" cy="50" r="45" fill="#EAC2D6" />
+					</svg>
 				</a>
 			</div>
-			<div class="nav-item">
-				<a href="../Playground/">
-					Playground
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="../Coding/">
-					Coding
-				</a>
-			</div>
-			<div class="nav-item" id="page-highlight">
-				<a>
-					About
-				</a>
-			</div>
-			<div class="nav-item">
-				<a href="../Resume/Hannah_Farnham_Resume.pdf" target="_blank" rel="noopener noreferrer">
-					Resume
-				</a>
-			</div>
+
+			<button class="menu-button" id="menuButton">
+				Menu
+			</button>
+			
 		</nav>
+
+		<div class="menu-overlay" id="menuOverlay">
+
+			<button class="close-button" id="closeButton">
+				Close
+			</button>
+
+			<nav class="menu-links">
+				<a href="/index.html">Work</a>
+				<a href="/Playground/">Playground</a>
+				<a href="/Coding/">Coding</a>
+				<div class="small-links">
+					<a href="/About">About</a>
+					<a href="/Resume/Hannah_Farnham_Resume.pdf" target="_blank">Resume</a>
+				</div>
+			</nav>
+
+		</div>
+
 
 		<section class="body-content">
 			<section class="side-by-side">
@@ -60,13 +64,13 @@
 					</h1>
 					<div id="header-body">
 						<p>  
-							Hi, I’m Hannah Farnham — a creative based in New York City, originally from the North Shore of Massachusetts. I combine design, art, and technology to craft <em>thoughtful</em> experiences across mediums.
+							Hi, I’m Hannah Farnham, a creative based in New York City, originally from the North Shore of Massachusetts. I combine design, art, and technology to craft <em>thoughtful</em> experiences across mediums.
 						</p>
 						<p> 
 							Whether I'm painting, prototyping, coding, or brainstorming, I love the feeling of <em>chasing an idea</em> until it works. I’m always excited to find new ways to expand my creative toolkit.
 						</p>
 						<p>
-							I’m not too precious about first drafts; I’m always ready to rethink, rework, or rebuild if it means getting somewhere better. I value process over perfection — approaching every project with curiosity, <em>adaptability</em>, and an openness to rethinking things until they truly work.
+							I’m not too precious about first drafts; I’m always ready to rethink, rework, or rebuild if it means getting somewhere better. I value process over perfection; approaching every project with curiosity, <em>adaptability</em>, and an openness to rethinking things until they truly work.
 						</p>
 						<h4>
 							I enjoy running, biking, hiking, traveling, eating, painting, knitting, cooking, baking, playing soccer, gardening, good beer, & a homemade halloween costume.
@@ -101,11 +105,6 @@
 
 			<footer>
 				<div class="footer-top">
-					<div class="footer-text">
-						<p>
-							I design things, make art, and write code that sometimes works. Whether I'm painting, prototyping, coding, or brainstorming, I love the feeling of chasing an idea until it works.
-						</p>
-					</div>
 					<div class="footer-row">
 						<a href="mailto:hfarnham.design@gmail.com">
 							Email
@@ -114,21 +113,39 @@
 							Linkedin
 						</a>
 					</div>
-				</div>
-				<div class="footer-bottom">
-					<h1>
-						Thanks for stopping by 
-					</h1>
 					<div class="footer-row">
 						<p>
-							Designed & Coded by Hannah Farnham
+							Designed & Coded by Hannah
 						</p>
 						<p>
-							© 2025 Hannah Farnham
+							© 2025 
 						</p>
 					</div>
-				</div>
 			</footer>
+
+			<!-- MENU ANIMATION -->
+			<script> 
+			const menuButton = document.getElementById('menuButton');
+			const menuOverlay = document.getElementById('menuOverlay');
+			const closeButton = document.getElementById('closeButton');
+
+			menuButton.addEventListener('click', () => {
+				menuOverlay.classList.add('active');
+				document.body.classList.add('menu-open');
+			});
+
+			closeButton.addEventListener('click', () => {
+				menuOverlay.classList.remove('active');
+				document.body.classList.remove('menu-open');
+			});
+
+			document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				menuOverlay.classList.remove('active');
+				document.body.classList.remove('menu-open');
+			}
+			});
+			</script>
 
 		</section>
 	</body>
