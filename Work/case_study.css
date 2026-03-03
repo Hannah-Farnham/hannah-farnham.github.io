@@ -961,7 +961,8 @@ p{
 #quote-section{
 	padding: 250px;
 	h1{
-		font-size: 8vw;
+		max-width: 36ch;
+		font-size: 3vw;
 	}
 }
 
