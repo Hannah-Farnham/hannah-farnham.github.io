@@ -8,7 +8,6 @@ header{
 
 	.inline-links{
 		grid-template-columns: repeat(6, 1fr);
-		padding: var(--size-1);
 	}
 
 	#wide-block{
