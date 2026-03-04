@@ -124,6 +124,14 @@ p{
 	margin-bottom: 8px;
 }
 
+#shorter-images{
+		#half-width-image{
+		max-height: 400px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
 #shorter-images-1{
 	#half-width-image{
 		max-height: 400px;
