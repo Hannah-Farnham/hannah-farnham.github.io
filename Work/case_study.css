@@ -235,7 +235,7 @@ p{
 	}
 }
 	/* Intro Section */
-	
+
 #full-width-image{
 	overflow: hidden;
 	display: flex;
@@ -265,8 +265,8 @@ p{
 	justify-content: center;
 	align-items: center;
 	border-radius: var(--size-1);
-	height: 30vh;
-	margin-bottom: 8px;
+	height: 20vh;
+	margin: 8px;
 	img{
 		object-fit: cover;
 		overflow: hidden;
