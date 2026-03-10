@@ -298,7 +298,7 @@ p{
 	margin-bottom: 8px;
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-2);
+	gap: var(--size-4);
 	ul {
 		list-style-type: disc;
 		padding-left: var(--size-1); 
@@ -357,7 +357,7 @@ p{
 #problem-section{
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-2);
+	gap: var(--size-4);
 	img{
 		border-radius: 16px;
 	}
@@ -574,7 +574,7 @@ p{
 .sketches{
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-3);
+	gap: var(--size-4);
 	flex-wrap: wrap;
 		h3{
 			padding-bottom: var(--size-0);
@@ -641,6 +641,8 @@ p{
 	max-width: 900px;
 	justify-content: start;
 	align-items: flex-start;
+	overflow: hidden;
+	border-radius: 16px;
 }
 
 #map-image{
@@ -660,7 +662,7 @@ p{
 /* Key-features */
 
 .phone-image{
-	border: 10px black solid;
+	border: 8px black solid;
 	border-radius: 32px;
 }
 
@@ -677,11 +679,25 @@ p{
 	max-width: 350px;
 }
 
+.desktop-image{
+	border: 8px black solid;
+	border-radius: 16px;
+	overflow: hidden;
+	max-height: 650px;
+	max-width: 900px;
+	video{
+		object-fit: cover;
+		display: block;
+		width: 100%;
+		height: 103%;
+		margin: 0;	
+	}
+}
 /* High-fidelity */
 
 .figma-embed{
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 	overflow: hidden;
 	iframe{
 		width: 100%;
@@ -895,7 +911,7 @@ p{
 	/* Low-Fidelity Section */
 
 	#low-fidelity-section, #testing-section{
-		gap: var(--size-3);
+		gap: var(--size-4);
 	}
 
 	.feature-block{
@@ -905,6 +921,10 @@ p{
 		align-items: center;
 		justify-content: center;
 		width: 100%;
+	}
+
+	.feature-block-image, .desktop-image{
+		width: 70vw;
 	}
 
 	#full-width-image{
@@ -975,6 +995,10 @@ p{
 			width: 250px;
 		}
 	}
+
+	.figma-embed{
+		height: 100vh;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -999,14 +1023,17 @@ p{
 	.user-quote{
 		font-size: 24px;
 	}
-
-
-#quote-section{
-	padding: 250px;
-	h1{
-		max-width: 36ch;
-		font-size: 3vw;
+	
+	.desktop-image{
+		width: 60vw;
 	}
+
+	#quote-section{
+		padding: 250px;
+		h1{
+			max-width: 36ch;
+			font-size: 3vw;
+		}
 }
 
 }
